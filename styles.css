@@ -1,0 +1,8 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin-left: 50px;
+    padding: 0;
+    background: linear-gradient(to bottom, #ccc, #333);
+    overflow: hidden;
+}
