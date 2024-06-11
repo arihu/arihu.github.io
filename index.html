@@ -7,9 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-
     <link rel="stylesheet" href="/css/styles.css" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -19,7 +17,7 @@
     <title>Ari Hu's Website</title>
   </head>
   <body class="gradient-custom">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light h3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark h3">
       <button
         class="navbar-toggler"
         type="button"
@@ -49,13 +47,41 @@
     </nav>
     <div class="container p-4">
       <h1>Ari Hu</h1>
-      <h2>I am currently studying Computer Science in UTD.</h2>
+      <h2>Recently Graduated in Computer Science</h2>
       <ul>
         <li><a href="resume/">Resume</a></li>
-        <li>Projects</li>
+        <li><a href="projects/">Projects</a></li>
         <li>Email: <a href="mailto:ariwho1@gmail.com">ariwho1@gmail.com</a></li>
       </ul>
     </div>
+    <div class="d-flex justify-content-center">
+      <model-viewer
+        alt="I'm a square"
+        src="/models/_tmp_gradio_c022f104b3eef7cae17674bfd3fe204bf4b44590_8f263e4202f1aa962185293860ed0d2ad31c92ca1eb2ec1794341eaa2f86f28f.glb"
+        ar
+        shadow-intensity="1"
+        touch-action="pan-y"
+        auto-rotate
+        rotation-per-second="30deg"
+        disable-zoom
+        camera-orbit="-10deg 90deg"
+      ></model-viewer>
+      <model-viewer
+        alt="I'm a square"
+        src="/models/tmpjp5nzyct.glb"
+        ar
+        shadow-intensity="1"
+        touch-action="pan-y"
+        auto-rotate
+        rotation-per-second="30deg"
+        disable-zoom
+      ></model-viewer>
+    </div>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
