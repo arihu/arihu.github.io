@@ -48,232 +48,615 @@
     <div class="container">
       <h1>Projects</h1>
       <h2>Professional</h2>
+      <div class="container">
+        <!-- Row 1 -->
+        <div class="card-deck projectset">
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/hcllm.PNG"
+              alt="hcllm"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Healthcare Correspondence LLM</h5>
+              <p class="card-text">
+                Build a proof of concept for a “chatbot” system with a group of
+                six that allows customers to ask questions and receive answers
+                from correspondence data history using open LLM architecture,
+                and create a proposed list of other data integrations that could
+                add value in the future.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#hcllmDetails"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="card text-white bg-dark invisible"></div>
+          <div class="card text-white bg-dark invisible"></div>
+        </div>
+      </div>
+      <!-- hcllm modal -->
+      <div
+        class="modal fade"
+        id="hcllmDetails"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="hcllmDetails"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="hcllmDetails">
+                Healthcare Correspondence LLM
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Build a proof of concept for a “chatbot” system with a group of
+                six that allows customers to ask questions and receive answers
+                from correspondence data history using open LLM architecture,
+                and create a proposed list of other data integrations that could
+                add value in the future. <br />
+                • Took Tesseract OCR JSON data and converted it to text to feed
+                it into the database ChromaDB. <br />
+                • Setup the LLama.cpp LLM with Pytorch and added CUDA support in
+                Amazon Workspace. <br />
+                • Linked the Database and the LLM for similarity search to find
+                relevant documents for context. <br />
+                • Setup a flask backend API to run the model given question, and
+                send answer to the frontend. <br />
+                • Made a status report and presented the project at SDS Dallas
+                Grand Opening and UTD Expo.
+
+                <img
+                  src="/projects/images/content/hcllm0.PNG"
+                  class="img-thumbnail mx-auto d-block"
+                />
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <h2>Personal</h2>
+      <div class="container">
+        <!-- Row 1 -->
+        <div class="card-deck projectset">
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/quickplay.PNG"
+              alt="quickplay"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">QuickPlay</h5>
+              <p class="card-text">
+                A Chrome Extension that allows you to change the speed of the
+                video player. Includes shortcuts to increment/decrement/reset
+                speed. Learned about Manifest V3 and Chrome Storage.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#quickplayDetails"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/scraper.PNG"
+              alt="scraper"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">IMDb Runtime Scraper (Outdated)</h5>
+              <p class="card-text">
+                Created a webpage using Flask that will input an IMDb TV ID and
+                return the total runtime using BeautifulSoap for episode page
+                list and Selenium scrapers for the dynamically loaded pages.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#scraperDetails"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/imager.PNG"
+              alt="imager"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Imager API</h5>
+              <p class="card-text">In Construction.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#imagerDetails"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="card-deck projectset my-3">
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/itube.PNG"
+              alt="itube"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">ITube</h5>
+              <p class="card-text">In Construction.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#itubeDetails"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="card text-white bg-dark invisible">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/twenty.PNG"
+              alt="twenty"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Twenty Card Solver</h5>
+              <p class="card-text">
+                Programmed a Lisp function and a Prolog clause that finds the
+                longest play with least wildcards or largest point value in a
+                card game "Twenty."
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#twentyDetails"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="card text-white bg-dark invisible">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/pacman.PNG"
+              alt="pacman"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pacman AI</h5>
+              <p class="card-text">
+                Implemented DFS, BFS, and A* Search algorithm for Pacman,
+                minimax and alpha beta pruning to maximize score, and inference,
+                bayes networks to predict ghost location.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#pacmanDetails"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- quickplay modal -->
+      <div
+        class="modal fade"
+        id="quickplayDetails"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="quickplayDetails"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="quickplayDetails">QuickPlay</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                A Chrome Extension that allows you to speed up videos by
+                selecting the "video" tag, and increasing the playback rate. A
+                use for this extension is to play videos with higher and lower
+                playback for websites without playback controls, finer playback
+                controls (ex:1.59 speed), or exceed playback limits on websites
+                (Youtube caps at 2x speed)
+                <img
+                  src="/projects/images/content/quickplay0.PNG"
+                  class="img-thumbnail mx-auto d-block"
+                />
+              </p>
+              <p>
+                Features a shortcut to bring up QuickPlay window (Alt + Q)
+                <br />
+                Allows quick reset to normal 1x speed (Alt + 1) <br />
+                and quick shortcuts to skip by 0.25x speed (Alt + Up/Down Arrow
+                Keys)
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- scraper modal-->
+      <div
+        class="modal fade"
+        id="scraperDetails"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="scraperDetails"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="scraperDetails">
+                IMDb Runtime Scraper
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5>
+                (Currently outdated as IMDb changed the layout of their website)
+              </h5>
+              <p>
+                A webpage that will take a given IMDb TV Show id and return the
+                total runtime in minutes as given in each episode's runtime
+                description with BeautifulSoup and Selenium. <br />
+                <br />
+                Almost all online sites that calculate the runtime of a show
+                uses the formula # of episodes * Average runtime of all
+                episodes. This can lead to inaccurate results especially for
+                shows with varying runtimes for each episode(more common because
+                of streaming).<br />
+                <br />
+                The scraper works by first receiving the IMDb id, retrieves the
+                HTML of the episode list containing that id with BeautifulSoap
+                as the episode list is loaded statically. Next, the scraper uses
+                Selenium to load each episode page dynamically, scrape the
+                runtime, and sum the results. <br />
+                <br />
+                Here is an example of calculating the exact runtime of Breaking
+                Bad
+                <img
+                  src="/projects/images/content/scraper0.PNG"
+                  class="img-thumbnail mx-auto d-block"
+                />
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <h2>Academic</h2>
-      <!-- Row 1 -->
-      <div class="card-deck projectset">
-        <div class="card text-white bg-dark">
-          <img
-            class="card-img-top"
-            src="/projects/images/thumbnail/systemsprogramming.PNG"
-            alt="sys"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Systems Programming</h5>
-            <p class="card-text">
-              Build 3 C projects: A client and server using sockets that stores
-              info, a multithreaded Merkle hash tree to encrypt a file, and a
-              custom shell that includes pipelining and built-in commands.
-            </p>
+      <div class="container">
+        <!-- Row 1 -->
+        <div class="card-deck projectset">
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/systemsprogramming.PNG"
+              alt="sys"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Systems Programming</h5>
+              <p class="card-text">
+                Build 3 C projects: A client and server using sockets that
+                stores info, a multithreaded Merkle hash tree to encrypt a file,
+                and a custom shell that includes pipelining and built-in
+                commands.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#sysDetails"
+                >Learn more</a
+              >
+            </div>
           </div>
-          <div class="card-footer text-center">
-            <a
-              href="#"
-              class="btn btn-secondary"
-              data-toggle="modal"
-              data-target="#sysDetails"
-              >Learn more</a
-            >
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/jos.PNG"
+              alt="Jos"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">JOS Operating System</h5>
+              <p class="card-text">
+                Build a JOS operating system. Learned how a Intel x86 i386 chip
+                boots, implemented memory management, environments, exception
+                handling, multitasking, file systems, spawn, and shell.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#josDetails"
+                >Learn more</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="card text-white bg-dark">
-          <img
-            class="card-img-top"
-            src="/projects/images/thumbnail/jos.PNG"
-            alt="Jos"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">JOS Operating System</h5>
-            <p class="card-text">
-              Build a JOS operating system. Learned how a Intel x86 i386 chip
-              boots, implemented memory management, environments, exception
-              handling, multitasking, file systems, spawn, and shell.
-            </p>
-          </div>
-          <div class="card-footer text-center">
-            <a
-              href="#"
-              class="btn btn-secondary"
-              data-toggle="modal"
-              data-target="#josDetails"
-              >Learn more</a
-            >
-          </div>
-        </div>
-        <div class="card text-white bg-dark">
-          <img
-            class="card-img-top"
-            src="/projects/images/thumbnail/glass.PNG"
-            alt="Glass"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Glass Database</h5>
-            <p class="card-text">
-              Constructed a grocery store database "Glass" with a group. Created
-              a proposal, an ER and Schema Diagram/Dictionary, Implementation
-              Log, Table Listing, and Data/Query examples.
-            </p>
-          </div>
-          <div class="card-footer text-center">
-            <a
-              href="#"
-              class="btn btn-secondary"
-              data-toggle="modal"
-              data-target="#glassDetails"
-              >Learn more</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- Row 2 -->
-      <div class="card-deck projectset my-3">
-        <div class="card text-white bg-dark">
-          <img
-            class="card-img-top"
-            src="/projects/images/thumbnail/soundrise.PNG"
-            alt="soundrise"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Soundrise</h5>
-            <p class="card-text">
-              Created a group SRS requirement/analysis document about a music
-              streaming service called “Soundrise” that included Use Cases/UML,
-              component/analysis/sequence diagram.
-            </p>
-          </div>
-          <div class="card-footer text-center">
-            <a
-              href="#"
-              class="btn btn-secondary"
-              data-toggle="modal"
-              data-target="#soundriseDetails"
-              >Learn more</a
-            >
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/glass.PNG"
+              alt="Glass"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Glass Database</h5>
+              <p class="card-text">
+                Constructed a grocery store database "Glass" with a group.
+                Created a proposal, an ER and Schema Diagram/Dictionary,
+                Implementation Log, Table Listing, and Data/Query examples.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#glassDetails"
+                >Learn more</a
+              >
+            </div>
           </div>
         </div>
-        <div class="card text-white bg-dark">
-          <img
-            class="card-img-top"
-            src="/projects/images/thumbnail/twenty.PNG"
-            alt="twenty"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Twenty Card Solver</h5>
-            <p class="card-text">
-              Programmed a Lisp function and a Prolog clause that finds the
-              longest play with least wildcards or largest point value in a card
-              game "Twenty."
-            </p>
+        <!-- Row 2 -->
+        <div class="card-deck projectset my-3">
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/soundrise.PNG"
+              alt="soundrise"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Soundrise</h5>
+              <p class="card-text">
+                Created a group SRS requirement/analysis document about a music
+                streaming service called “Soundrise” that included Use
+                Cases/UML, component/analysis/sequence diagram.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#soundriseDetails"
+                >Learn more</a
+              >
+            </div>
           </div>
-          <div class="card-footer text-center">
-            <a
-              href="#"
-              class="btn btn-secondary"
-              data-toggle="modal"
-              data-target="#twenty"
-              >Learn more</a
-            >
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/twenty.PNG"
+              alt="twenty"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Twenty Card Solver</h5>
+              <p class="card-text">
+                Programmed a Lisp function and a Prolog clause that finds the
+                longest play with least wildcards or largest point value in a
+                card game "Twenty."
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#twentyDetails"
+                >Learn more</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="/static/images/next-project.jpg"
-            alt="next project"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pacman AI</h5>
-            <p class="card-text">
-              What's next? Probably an application that solves a problem for the
-              world.
-            </p>
-          </div>
-          <div class="card-footer text-center">
-            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#"
-              >Learn More</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- Row 3 -->
-      <div class="card-deck projectset">
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="/static/39ad/39advertising-front.png"
-            alt="39advertising"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Dog Knight</h5>
-            <p class="card-text">
-              Acted as team leader for the game Dog Knight. As leader, I came up
-              with a collaboration/version merge plan, and built a timeline. I
-              also added Audio/Visual Effects, combat, and game world.
-            </p>
-          </div>
-          <div class="card-footer text-center">
-            <a
-              href="#"
-              class="btn btn-dark"
-              data-toggle="modal"
-              data-target="#tnad"
-              >Learn more</a
-            >
-          </div>
-        </div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="/static/rewardslive/rewardslive-front.png"
-            alt="rewardslive"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Yelp! Sentiment Analysis</h5>
-            <p class="card-text">
-              Implemented a Feed Forward and Recurrent neural network for
-              Sentiment Analysis that predicts a Yelp review's rating.
-              Constructed report detailing variations of networks, performance,
-              and error.
-            </p>
-          </div>
-          <div class="card-footer text-center">
-            <a
-              href="#"
-              class="btn btn-dark"
-              data-toggle="modal"
-              data-target="#rewardslive"
-              >Learn more</a
-            >
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/pacman.PNG"
+              alt="pacman"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pacman AI</h5>
+              <p class="card-text">
+                Implemented DFS, BFS, and A* Search algorithm for Pacman,
+                minimax and alpha beta pruning to maximize score, and inference,
+                bayes networks to predict ghost location.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#pacmanDetails"
+                >Learn More</a
+              >
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img
-            class="card-img-top"
-            src="/static/images/next-project.jpg"
-            alt="next project"
-            height="250px"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Insect Pest Recognition using CNN models</h5>
-            <p class="card-text">
-              Implemented ResNet18, MobileNet, and GoogleNet to classify insect
-              pests from the IP102 dataset with a group. Created a report
-              detailing experiment and results, and presented a presentation on
-              our implementation and findings.
-            </p>
+        <!-- Row 3 -->
+        <div class="card-deck projectset">
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/dogknight.JPG"
+              alt="dogknight"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dog Knight</h5>
+              <p class="card-text">
+                Acted as team leader for the game Dog Knight. As leader, I came
+                up with a collaboration/version merge plan, and built a
+                timeline. I also added Audio/Visual Effects, combat, and game
+                world.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#dogknightDetails"
+                >Learn more</a
+              >
+            </div>
           </div>
-          <div class="card-footer text-center">
-            <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#"
-              >Learn More</a
-            >
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/yelp.PNG"
+              alt="yelp"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Yelp! Sentiment Analysis</h5>
+              <p class="card-text">
+                Implemented a Feed Forward and Recurrent neural network for
+                Sentiment Analysis that predicts a Yelp review's rating.
+                Constructed report detailing variations of networks,
+                performance, and error.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#yelpDetails"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="card text-white bg-dark">
+            <img
+              class="card-img-top"
+              src="/projects/images/thumbnail/ipr.PNG"
+              alt="ipr"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Insect Pest Recognition using CNN models
+              </h5>
+              <p class="card-text">
+                Implemented ResNet18, MobileNet, and GoogleNet to classify
+                insect pests from the IP102 dataset with a group. Created a
+                report detailing experiment and results, and presented a
+                presentation on our implementation and findings.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#iprDetails"
+                >Learn More</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -593,49 +976,244 @@
             </div>
             <div class="modal-body">
               <p>
-                Created a SRS document with a group about a music streaming
-                service called “Soundrise.” The requirement specification
-                addressed the service's purpose, scope, main terms, actor
-                characteristics, functional categories and their features.
+                Build a Lisp/Prolog function/clause that finds the longest play
+                with least amount of Kings or largest point value in a hand of a
+                card game Twenty, where given a hand, one must match an
+                incrementing count that reaches twenty using a subset of that
+                hand. Kings are also counted as wildcards, face cards can have
+                pairs, and cards have different point values but Kings have a
+                point penalty. This was done by breaking the problem into
+                chunks. To get all possible plays, Copy all cards that are
+                smaller than the count, generate pairs if applicable, generate
+                wild cards up to count, and combine. To find the longest play
+                with the least amount of Kings, I sort all possible plays by a
+                score that prioritizes length with a larger value than Kings. To
+                find the largest point value, I sort all possible plays by point
+                value. The image below is both behaviors playing each other in
+                Lisp using DrRacket.
                 <img
-                  src="/projects/images/content/soundrise0.PNG"
+                  src="/projects/images/content/twenty0.PNG"
                   class="img-thumbnail mx-auto d-block"
                 />
               </p>
               <p>
-                Each of us created use case documents that incorporate UML
-                diagrams, success scenarios, and an activity diagram.
+                The image below is both behaviors playing each other in Prolog
+                using SWI-Prolog.
                 <img
-                  src="/projects/images/content/soundrise1.PNG"
+                  src="/projects/images/content/twenty1.PNG"
                   class="img-thumbnail mx-auto d-block"
                 />
               </p>
-
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- pacman modal -->
+      <div
+        class="modal fade"
+        id="pacmanDetails"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="pacmanDetails"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pacmanDetails">Pacman AI</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
               <p>
-                An Analysis and Design document was also created. The AD
-                document incorporated an overview component diagram, showcasing
-                the interactions between components in the Presentation,
-                application services, and Data tiers and System-wide entity
-                classes diagram.
+                Learned AI concepts by following the Pacman AI Project as
+                described in
+                <a
+                  href="http://ai.berkeley.edu/project_overview"
+                  target="_blank"
+                  >http://ai.berkeley.edu/project_overview</a
+                >
+              </p>
+              <p>
+                The image below shows the A* algorithm passing the given test
+                cases of finding an optimal path.
                 <img
-                  src="/projects/images/content/soundrise2.PNG"
+                  src="/projects/images/content/pacman0.PNG"
                   class="img-thumbnail mx-auto d-block"
                 />
               </p>
               <p>
-                New use case documents were created that showcased analysis
-                class and sequence diagrams, along with design class and
-                sequence diagrams. The designs were also designed to incorporate
-                design patterns like DTO, Facade, DAO, Validator, and Builder.
+                Another image shown below shows the use of the expectimax
+                algorithm to avoid ghosts
                 <img
-                  src="/projects/images/content/soundrise3.PNG"
+                  src="/projects/images/content/pacman1.PNG"
                   class="img-thumbnail mx-auto d-block"
                 />
               </p>
-              <img
-                src="/projects/images/content/soundrise4.PNG"
-                class="img-thumbnail mx-auto d-block"
-              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dogknight modal -->
+      <div
+        class="modal fade"
+        id="dogknightDetails"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="dogknightDetails"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="dogknightDetails">Dog Knight</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Build a game in Unity with a group of three. Full details about
+                this game is in this document.
+              </p>
+              <p>
+                <a href="/documents/dogknight.pdf" target="_blank">View Info</a>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- yelp modal -->
+      <div
+        class="modal fade"
+        id="yelpDetails"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="yelpDetails"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="yelpDetails">
+                Yelp! Sentiment Analysis
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                For this project, we are filling the forward function for FFNN
+                and RNN models that would predict Yelp! review scores. The main
+                experiments are testing the FFNN and RNN models with different
+                hidden dimension sizes, and the results are a better accuracy of
+                65% with the FFNN model at 32 dimensions, with the average RNN
+                accuracy at around 30%. Full paper is below.
+              </p>
+              <p>
+                <a href="/documents/yelp.pdf" target="_blank">View Paper</a>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ipr modal -->
+      <div
+        class="modal fade"
+        id="iprDetails"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="iprDetails"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="iprDetails">
+                Insect Pest Recognition using CNN models
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                The primary objective of this project is to deploy Convolutional
+                Neural Networks (CNNs) to accurately identify and classify
+                insect pests from images. This task involves developing a
+                machine learning model capable of discerning between various
+                insect species, specifically those that are detrimental to
+                agriculture. By leveraging the strengths of three different CNN
+                architectures, Resnet18, GoogleNet, and MobileNetV3, this
+                project aims to evaluate which model performs best in terms of
+                accuracy, computational efficiency, and practical applicability
+                in aiding agricultural practices. Full paper is below.
+              </p>
+              <p>
+                <a href="/documents/ipr.pdf" target="_blank">View Paper</a>
+              </p>
             </div>
             <div class="modal-footer">
               <button
