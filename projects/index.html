@@ -16,8 +16,8 @@
     />
     <title>Ari Hu's Projects</title>
   </head>
-  <body class="gradient-custom">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark h3">
+  <body class="background text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark border h3 m-3">
       <button
         class="navbar-toggler"
         type="button"
@@ -50,8 +50,8 @@
       <h2>Professional</h2>
       <div class="container">
         <!-- Row 1 -->
-        <div class="card-deck projectset">
-          <div class="card text-white bg-dark">
+        <div class="card-deck projectset my-3">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/hcllm.PNG"
@@ -112,8 +112,8 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark invisible"></div>
-          <div class="card text-white bg-dark invisible"></div>
+          <div class="card text-white glass invisible"></div>
+          <div class="card text-white glass invisible"></div>
         </div>
       </div>
       <!-- hcllm modal -->
@@ -180,8 +180,8 @@
       <h2>Personal</h2>
       <div class="container">
         <!-- Row 1 -->
-        <div class="card-deck projectset">
-          <div class="card text-white bg-dark">
+        <div class="card-deck projectset my-3">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/quickplay.PNG"
@@ -224,7 +224,7 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/scraper.PNG"
@@ -280,7 +280,7 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/imager.PNG"
@@ -331,7 +331,7 @@
         </div>
         <!-- Row 2 -->
         <div class="card-deck projectset my-3">
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/itube.PNG"
@@ -351,7 +351,7 @@
                 />
                 <img
                   class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
                 />
                 <img
                   class="icon"
@@ -398,28 +398,56 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark invisible">
+          <div class="card text-white glass invisible">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/twenty.PNG"
-              alt="twenty"
+              alt="todo"
               height="250px"
             />
             <div class="card-body">
-              <h5 class="card-title">?</h5>
-              <p class="card-text">In Construction</p>
+              <h5 class="card-title">Various TodoLists</h5>
+              <div class="icon-bar">
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                />
+              </div>
+              <p class="card-text">
+                Build a todolist with numerous different back and front ends.
+              </p>
             </div>
             <div class="card-footer text-center">
               <a
                 href="#"
                 class="btn btn-secondary"
                 data-toggle="modal"
-                data-target="#twentyDetails"
+                data-target="#todoDetails"
                 >Learn more</a
               >
             </div>
           </div>
-          <div class="card text-white bg-dark invisible">
+          <div class="card text-white glass invisible">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/pacman.PNG"
@@ -774,11 +802,105 @@
           </div>
         </div>
       </div>
+      <!-- todo modal -->
+      <div
+        class="modal fade"
+        id="todoDetails"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="todoDetails"
+        style="display: none"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="todoDetails">Various TodoLists</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3>Build TodoLists with different front and backends</h3>
+              <h4>Backend</h4>
+              <p>
+                All Backends follow the same endpoints: <br />
+                - GET /api/todo/ - Get All TodoList Items <br />
+                - POST /api/todo/ - Post Todolist Items<br />
+                - PUT /api/todo/:id - Edit TodoList Item given ID<br />
+                - DELETE /api/todo/:id - Delete Todolist Item given ID<br />
+              </p>
+              <p>
+                And each database follows the same schema: <br />
+                - Title - String (required) <br />
+                - Description - String <br />
+                - Finished - boolean (required, defaults to false) <br />
+                - Deadline - Date <br />
+              </p>
+              <h5>1. MongoDB, Express, and Node</h5>
+              <p>
+                Created a backend rest API using Express. The image below shows
+                a todo list Item Post Request and the corresponding entry in
+                MongoDB
+              </p>
+              <div class="d-flex justify-content-center">
+                <img
+                  src="/projects/images/content/todo0.PNG"
+                  class="img-thumbnail mx-auto d-block"
+                  width="50%"
+                />
+                <img
+                  src="/projects/images/content/todo1.PNG"
+                  class="img-thumbnail mx-auto d-block"
+                  width="50%"
+                />
+              </div>
+              <h5>2. MySQL, Spring</h5>
+              <p>
+                Created a backend rest API using Express. The image below shows
+                a todo list Item Post Request and the corresponding entry in
+                MongoDB
+              </p>
+              <div class="d-flex justify-content-center">
+                <img
+                  src="/projects/images/content/todo0.PNG"
+                  class="img-thumbnail mx-auto d-block"
+                  width="50%"
+                />
+                <img
+                  src="/projects/images/content/todo1.PNG"
+                  class="img-thumbnail mx-auto d-block"
+                  width="50%"
+                />
+              </div>
+              <h5>3. PostgresSQL, Django</h5>
+              <h5>2. Microsoft SQL Server, ASP.NET</h5>
+              <h4>Frontend</h4>
+              <h5>1. React</h5>
+              <h5>2. Angular</h5>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <h2>Academic</h2>
       <div class="container">
         <!-- Row 1 -->
-        <div class="card-deck projectset">
-          <div class="card text-white bg-dark">
+        <div class="card-deck projectset my-3">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/systemsprogramming.PNG"
@@ -819,7 +941,7 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/jos.PNG"
@@ -866,7 +988,7 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/glass.PNG"
@@ -908,7 +1030,7 @@
         </div>
         <!-- Row 2 -->
         <div class="card-deck projectset my-3">
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/soundrise.PNG"
@@ -947,7 +1069,7 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/twenty.PNG"
@@ -982,7 +1104,7 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/pacman.PNG"
@@ -1015,8 +1137,8 @@
           </div>
         </div>
         <!-- Row 3 -->
-        <div class="card-deck projectset mb-3">
-          <div class="card text-white bg-dark">
+        <div class="card-deck projectset my-3">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/dogknight.PNG"
@@ -1056,7 +1178,7 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/yelp.PNG"
@@ -1104,7 +1226,7 @@
               >
             </div>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
               src="/projects/images/thumbnail/ipr.PNG"
@@ -1739,5 +1861,53 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <footer class="footer">
+      <section class="mb-4 text-center">
+        <!-- Github -->
+        <a
+          class="btn btn-outline-light m-1 btn-circle btn-md"
+          href="https://github.com/arihu"
+          role="button"
+          target="_blank"
+        >
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/github.png"
+            alt="github"
+          />
+        </a>
+
+        <!-- Linkedin -->
+        <a
+          class="btn btn-outline-light m-1 btn-circle btn-md"
+          href="https://www.linkedin.com/in/ari-hu-3658a3292/"
+          role="button"
+          target="_blank"
+        >
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/color/48/linkedin.png"
+            alt="linkedin"
+          />
+        </a>
+
+        <!-- Mail -->
+        <a
+          class="btn btn-outline-light m-1 btn-circle btn-md"
+          href="mailto: ariwho1@gmail.com"
+          role="button"
+          target="_blank"
+        >
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/color/48/gmail-new.png"
+            alt="mail"
+          />
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
