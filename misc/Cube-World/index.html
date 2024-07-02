@@ -14,7 +14,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <title>Ari Hu's Website</title>
+    <title>Ari Hu's Random Stuff</title>
   </head>
   <body class="background text-light">
     <nav class="navbar navbar-expand-lg navbar-dark border h3 m-3">
@@ -31,10 +31,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="../">Home </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/projects/">Projects</a>
@@ -48,18 +46,36 @@
         </ul>
       </div>
     </nav>
-    <!-- <div class="container">
-      <h1>Ari Hu</h1>
-      <h3>
-        Aspring Software Engineer looking for an Entry Level Job. Recently
-        Graduated in Computer Science from UTD.
-      </h3>
-    </div> -->
-
-    <div class="d-flex justify-content-center align-items-center">
-      <h1 class="text3d">Ari Hu</h1>
+    <div class="d-flex justify-content-center p-4 m-3">
+      <div class="threed-text">Should've Gone to the Gig!</div>
     </div>
-
+    <div class="d-flex justify-content-center">
+      <model-viewer
+        alt="square0"
+        src="/models/square0.glb"
+        ar
+        shadow-intensity="1"
+        touch-action="pan-y"
+        auto-rotate
+        rotation-per-second="30deg"
+        disable-zoom
+        camera-orbit="-10deg 90deg"
+      ></model-viewer>
+      <model-viewer
+        alt="square1"
+        src="/models/square1.glb"
+        ar
+        shadow-intensity="1"
+        touch-action="pan-y"
+        auto-rotate
+        rotation-per-second="30deg"
+        disable-zoom
+      ></model-viewer>
+    </div>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

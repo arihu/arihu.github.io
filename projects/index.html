@@ -34,13 +34,16 @@
           <li class="nav-item">
             <a class="nav-link" href="../">Home </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/resume/">Resume</a>
-          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#"
               >Projects<span class="sr-only">(current)</span></a
             >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/misc/">Misc.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
           </li>
         </ul>
       </div>
@@ -116,67 +119,71 @@
           <div class="card text-white glass invisible"></div>
         </div>
       </div>
-      <!-- hcllm modal -->
-      <div
-        class="modal fade"
-        id="hcllmDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="hcllmDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="hcllmDetails">
-                Healthcare Correspondence LLM
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Build a proof of concept for a “chatbot” system with a group of
-                six that allows customers to ask questions and receive answers
-                from correspondence data history using open LLM architecture,
-                and create a proposed list of other data integrations that could
-                add value in the future. <br />
-                • Took Tesseract OCR JSON data and converted it to text to feed
-                it into the database ChromaDB. <br />
-                • Setup the LLama.cpp LLM with Pytorch and added CUDA support in
-                Amazon Workspace. <br />
-                • Linked the Database and the LLM for similarity search to find
-                relevant documents for context. <br />
-                • Setup a flask backend API to run the model given question, and
-                send answer to the frontend. <br />
-                • Made a status report and presented the project at SDS Dallas
-                Grand Opening and UTD Expo.
+      <!-- Professional Modal -->
+      <div class="Pro-Modal">
+        <!-- hcllm modal -->
+        <div
+          class="modal fade"
+          id="hcllmDetails"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="hcllmDetails"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hcllmDetails">
+                  Healthcare Correspondence LLM
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Build a proof of concept for a “chatbot” system with a group
+                  of six that allows customers to ask questions and receive
+                  answers from correspondence data history using open LLM
+                  architecture, and create a proposed list of other data
+                  integrations that could add value in the future. <br />
+                  • Took Tesseract OCR JSON data and converted it to text to
+                  feed it into the database ChromaDB. <br />
+                  • Setup the LLama.cpp LLM with Pytorch and added CUDA support
+                  in Amazon Workspace. <br />
+                  • Linked the Database and the LLM for similarity search to
+                  find relevant documents for context. <br />
+                  • Setup a flask backend API to run the model given question,
+                  and send answer to the frontend. <br />
+                  • Made a status report and presented the project at SDS Dallas
+                  Grand Opening and UTD Expo.
 
-                <img
-                  src="/projects/images/content/hcllm0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+                  <img
+                    src="/projects/images/content/hcllm0.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <h2>Personal</h2>
       <div class="container">
         <!-- Row 1 -->
@@ -206,6 +213,10 @@
                 <img
                   class="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://img.icons8.com/color/48/git.png"
                 />
               </div>
               <p class="card-text">
@@ -263,6 +274,10 @@
                   class="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg"
                 />
+                <img
+                  class="icon"
+                  src="https://img.icons8.com/color/48/git.png"
+                />
               </div>
               <p class="card-text">
                 Created a webpage using Flask that will input an IMDb TV ID and
@@ -309,6 +324,10 @@
                 <img
                   class="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://img.icons8.com/color/48/git.png"
                 />
               </div>
               <p class="card-text">
@@ -378,6 +397,10 @@
                   class="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
                 />
+                <img
+                  class="icon"
+                  src="https://img.icons8.com/color/48/git.png"
+                />
               </div>
               <p class="card-text">
                 Created a Youtube Clone that allowed users to view videos and
@@ -398,10 +421,56 @@
               >
             </div>
           </div>
-          <div class="card text-white glass invisible">
+          <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/twenty.PNG"
+              src="/projects/images/thumbnail/portfolio.PNG"
+              alt="portfolio"
+              height="250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portfolio</h5>
+              <div class="icon-bar">
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://img.icons8.com/color/48/git.png"
+                />
+              </div>
+              <p class="card-text">
+                Build a portfolio with HTML, CSS(Bootstrap), Javascript.
+                Displayed information, projects, and skills.
+              </p>
+            </div>
+            <div class="card-footer text-center">
+              <a
+                href="#"
+                class="btn btn-secondary"
+                data-toggle="modal"
+                data-target="#portfolioDetails"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="card text-white glass">
+            <img
+              class="card-img-top img-fluid"
+              src="/projects/images/thumbnail/todo.PNG"
               alt="todo"
               height="250px"
             />
@@ -422,6 +491,10 @@
                 />
                 <img
                   class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                />
+                <img
+                  class="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
                 />
                 <img
@@ -430,11 +503,71 @@
                 />
                 <img
                   class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                />
+                <!-- <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularmaterial/angularmaterial-original.svg"
+                /> -->
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg"
+                />
+                <img
+                  class="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                />
+                <!-- <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                /> -->
+                <img
+                  class="icon"
+                  src="https://img.icons8.com/color/48/git.png"
                 />
               </div>
               <p class="card-text">
-                Build a todolist with numerous different back and front ends.
+                Build a todolist with four interchangeable backends: MongoDB +
+                Express + Node, MySQL + Java + Spring, PostgreSQL + Django,
+                Microsoft SQL Server + C# + ASP.NET, and three interchangeable
+                frontends: Vanilla HTML/CSS/JS, jQuery + Bootstrap, and React +
+                Tailwind.
               </p>
             </div>
             <div class="card-footer text-center">
@@ -447,525 +580,81 @@
               >
             </div>
           </div>
-          <div class="card text-white glass invisible">
-            <img
-              class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/pacman.PNG"
-              alt="pacman"
-              height="250px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">?</h5>
-              <p class="card-text">In Construction</p>
-            </div>
-            <div class="card-footer text-center">
-              <a
-                href="#"
-                class="btn btn-secondary"
-                data-toggle="modal"
-                data-target="#pacmanDetails"
-                >Learn More</a
-              >
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- quickplay modal -->
-      <div
-        class="modal fade"
-        id="quickplayDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="quickplayDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="quickplayDetails">QuickPlay</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                A Chrome Extension that allows you to speed up videos by
-                selecting the "video" tag, and increasing the playback rate. A
-                use for this extension is to play videos with higher and lower
-                playback for websites without playback controls, finer playback
-                controls (ex:1.59 speed), or exceed playback limits on websites
-                (Youtube caps at 2x speed)
-                <img
-                  src="/projects/images/content/quickplay0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                Features a shortcut to bring up QuickPlay window (Alt + Q)
-                <br />
-                Allows quick reset to normal 1x speed (Alt + 1) <br />
-                and quick shortcuts to skip by 0.25x speed (Alt + Up/Down Arrow
-                Keys)
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- scraper modal-->
-      <div
-        class="modal fade"
-        id="scraperDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="scraperDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="scraperDetails">
-                IMDb Runtime Scraper
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h5>
-                (Currently outdated as IMDb changed the layout of their website)
-              </h5>
-              <p>
-                A webpage that will take a given IMDb TV Show id and return the
-                total runtime in minutes as given in each episode's runtime
-                description with BeautifulSoup and Selenium. <br />
-                <br />
-                Almost all online sites that calculate the runtime of a show
-                uses the formula # of episodes * Average runtime of all
-                episodes. This can lead to inaccurate results especially for
-                shows with varying runtimes for each episode(more common because
-                of streaming).<br />
-                <br />
-                The scraper works by first receiving the IMDb id, retrieves the
-                HTML of the episode list containing that id with BeautifulSoap
-                as the episode list is loaded statically. Next, the scraper uses
-                Selenium to load each episode page dynamically, scrape the
-                runtime, and sum the results. <br />
-                <br />
-                Here is an example of calculating the exact runtime of Breaking
-                Bad
-                <img
-                  src="/projects/images/content/scraper0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- imager modal -->
-      <div
-        class="modal fade"
-        id="imagerDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="imagerDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="imagerDetails">Imager API</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Build an API that allows someone to register and authenticate
-                with a username and password with Spring Security, and store
-                images(encoded in base64) into a MySQL database using Hibernate.
-                Also used Postman to check my API. The first step in interacting
-                with this API is to register with a username, email and
-                password.
-                <img
-                  src="/projects/images/content/imager0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                Once the user is registered, the AuthenticationController would
-                pass the Request and return the JSON Web Token generated by the
-                JWT Service. Next, The AuthenticationService would store the
-                user info to the User Repository. Hibernate will then put the
-                info into the MySQL Database.
-                <img
-                  src="/projects/images/content/imager1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                The next step for this API is to authenticate their identity by
-                sending a post request with their username and password. This
-                would generate a following JWT token that can be used for
-                posting or getting images.
-                <img
-                  src="/projects/images/content/imager2.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                After authenticating, one can send a post request to post an
-                image. You can authenticate by pasting the token to "bearer
-                token" or "Basic Auth" and typing the username and password.
-                <img
-                  src="/projects/images/content/imager3.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                After posting the image, it will appear in the image table in
-                the MySQL database.
-                <img
-                  src="/projects/images/content/imager4.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                You can get all images, by authenticating like the post request.
-                It will return JSON of the image and user ID, title, image in
-                base64 format, and description.
-
-                <img
-                  src="/projects/images/content/imager5.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                Other API endpoints include GET image, which when given the
-                image id (ex: image2/3), will return that specific image. Put
-                image, which will replace the image with the given image ID, and
-                DEL image which will delete the image with the given image ID.
-
-                <img
-                  src="/projects/images/content/imager6.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ITube modal -->
-      <div
-        class="modal fade"
-        id="itubeDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="itubeDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="itubeDetails">Itube</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Followed a tutorial to create a youtube clone, ITube, where
-                users can sign in with their google accounts using Firebase
-                Auth, upload videos when authenticated, and watch videos that
-                are uploaded. Google cloud is used to run the Docker files of
-                the API and Video Processing, and Firebase is used as the
-                database. The frontend incorporates React, Typescript, and
-                NextJS, which would send requests to a backend that uses
-                ExpressJS. I deviated from the tutorial by using TailwindCSS for
-                the frontend, Typescript for the API service, and implementing a
-                upload form. ITube's Upload Page features a form for Title,
-                Description, Upload Video, and Upload Thumbnail. The current
-                iteration only supports Video uploads.
-                <img
-                  src="/projects/images/content/itube.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-                <img
-                  src="/projects/images/content/itube0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                Once the video is uploaded, it will call an endpoint in the
-                public video api service, which is received by Cloud Storage by
-                a implementing public api service which incorporates Firebase
-                functions. Once Cloud Storage receives the video, it triggers
-                the Pub/Sub subscription to queue a message to process the video
-                with the video processing service.
-                <img
-                  src="/projects/images/content/itube5.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                The video processing service is a Docker image created to
-                process the video to 360 or 720p, store the result in a
-                processed bucket, and store video data to Firebase.
-                <img
-                  src="/projects/images/content/itube4.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-                <img
-                  src="/projects/images/content/itube3.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                For the videos to be displayed to the front end, the web client
-                first gets videos from the public api service, which will
-                retrieve the data from firestore. The videos are then mapped to
-                the front page.
-                <img
-                  src="/projects/images/content/itube1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                Clicking on the video brings ITube to the watch page, where
-                users can watch the video.
-                <img
-                  src="/projects/images/content/itube2.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- todo modal -->
-      <div
-        class="modal fade"
-        id="todoDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="todoDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="todoDetails">Various TodoLists</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h3>Build TodoLists with different front and backends</h3>
-              <h4>Backend</h4>
-              <p>
-                All Backends follow the same endpoints: <br />
-                - GET /api/todo/ - Get All TodoList Items <br />
-                - POST /api/todo/ - Post Todolist Items<br />
-                - PUT /api/todo/:id - Edit TodoList Item given ID<br />
-                - DELETE /api/todo/:id - Delete Todolist Item given ID<br />
-              </p>
-              <p>
-                And each database follows the same schema: <br />
-                - Title - String (required) <br />
-                - Description - String <br />
-                - Finished - boolean (required, defaults to false) <br />
-                - Deadline - Date <br />
-              </p>
-              <h5>1. MongoDB, Express, and Node</h5>
-              <p>
-                Created a backend rest API using Express. The image below shows
-                a todo list Item Post Request and the corresponding entry in
-                MongoDB
-              </p>
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/projects/images/content/todo0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                  width="50%"
-                />
-                <img
-                  src="/projects/images/content/todo1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                  width="50%"
-                />
-              </div>
-              <h5>2. MySQL, Spring</h5>
-              <p>
-                Created a backend rest API using Express. The image below shows
-                a todo list Item Post Request and the corresponding entry in
-                MongoDB
-              </p>
-              <div class="d-flex justify-content-center">
-                <img
-                  src="/projects/images/content/todo0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                  width="50%"
-                />
-                <img
-                  src="/projects/images/content/todo1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                  width="50%"
-                />
-              </div>
-              <h5>3. PostgresSQL, Django</h5>
-              <h5>2. Microsoft SQL Server, ASP.NET</h5>
-              <h4>Frontend</h4>
-              <h5>1. React</h5>
-              <h5>2. Angular</h5>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2>Academic</h2>
-      <div class="container">
-        <!-- Row 1 -->
+        <!-- Row 3 -->
         <div class="card-deck projectset my-3">
           <div class="card text-white glass">
             <img
               class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/systemsprogramming.PNG"
-              alt="sys"
+              src="/projects/images/thumbnail/construction.PNG"
+              alt="vjam"
               height="250px"
             />
             <div class="card-body">
-              <h5 class="card-title">Systems Programming</h5>
+              <h5 class="card-title">Virtual Jam</h5>
               <div class="icon-bar">
                 <img
                   class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://img.icons8.com/color/48/bash.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
                 />
               </div>
-
-              <p class="card-text">
-                Build 3 C projects: A client and server using sockets that
-                stores info, a multithreaded Merkle hash tree to encrypt a file,
-                and a custom shell that includes pipelining and built-in
-                commands.
-              </p>
+              <p class="card-text">Under Construction</p>
             </div>
             <div class="card-footer text-center">
               <a
                 href="#"
                 class="btn btn-secondary"
                 data-toggle="modal"
-                data-target="#sysDetails"
+                data-target="#vjamDetails"
                 >Learn more</a
               >
             </div>
           </div>
-          <div class="card text-white glass">
+          <div class="card text-white glass invisible">
             <img
               class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/jos.PNG"
-              alt="Jos"
+              src="/projects/images/thumbnail/portfolio.PNG"
+              alt="portfolio"
               height="250px"
             />
             <div class="card-body">
-              <h5 class="card-title">JOS Operating System</h5>
+              <h5 class="card-title">Portfolio</h5>
               <div class="icon-bar">
                 <img
                   class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://img.icons8.com/color/48/bash.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://img.icons8.com/fluency/48/x86.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                 />
                 <img
                   class="icon"
@@ -973,9 +662,8 @@
                 />
               </div>
               <p class="card-text">
-                Build a JOS operating system. Learned how a Intel x86 i386 chip
-                boots, implemented memory management, environments, exception
-                handling, multitasking, file systems, spawn, and shell.
+                Build a portfolio with HTML, CSS(Bootstrap), Javascript.
+                Displayed information, projects, and skills.
               </p>
             </div>
             <div class="card-footer text-center">
@@ -983,189 +671,112 @@
                 href="#"
                 class="btn btn-secondary"
                 data-toggle="modal"
-                data-target="#josDetails"
-                >Learn more</a
+                data-target="#portfolioDetails"
+                >Learn More</a
               >
             </div>
           </div>
-          <div class="card text-white glass">
+          <div class="card text-white glass invisible">
             <img
               class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/glass.PNG"
-              alt="Glass"
+              src="/projects/images/thumbnail/todo.PNG"
+              alt="todo"
               height="250px"
             />
             <div class="card-body">
-              <h5 class="card-title">Glass Database</h5>
+              <h5 class="card-title">Various TodoLists</h5>
               <div class="icon-bar">
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                />
                 <img
                   class="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://img.icons8.com/color/48/microsoft-visio.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://img.icons8.com/color/48/google-drive--v2.png"
-                />
-              </div>
-              <p class="card-text">
-                Constructed a grocery store database "Glass" with a group.
-                Created a proposal, an ER and Schema Diagram/Dictionary,
-                Implementation Log, Table Listing, and Data/Query examples.
-              </p>
-            </div>
-            <div class="card-footer text-center">
-              <a
-                href="#"
-                class="btn btn-secondary"
-                data-toggle="modal"
-                data-target="#glassDetails"
-                >Learn more</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Row 2 -->
-        <div class="card-deck projectset my-3">
-          <div class="card text-white glass">
-            <img
-              class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/soundrise.PNG"
-              alt="soundrise"
-              height="250px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Soundrise</h5>
-              <div class="icon-bar">
-                <img
-                  class="icon"
-                  src="https://img.icons8.com/color/48/microsoft-word-2019--v2.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg"
-                />
-              </div>
-              <p class="card-text">
-                Created a group SRS requirement/analysis document about a music
-                streaming service called “Soundrise” that included Use
-                Cases/UML, component/analysis/sequence diagram.
-              </p>
-            </div>
-            <div class="card-footer text-center">
-              <a
-                href="#"
-                class="btn btn-secondary"
-                data-toggle="modal"
-                data-target="#soundriseDetails"
-                >Learn more</a
-              >
-            </div>
-          </div>
-          <div class="card text-white glass">
-            <img
-              class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/twenty.PNG"
-              alt="twenty"
-              height="250px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Twenty Card Solver</h5>
-              <div class="icon-bar">
-                <img
-                  class="icon"
-                  src="https://img.icons8.com/color/48/lisp.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
                 />
                 <img
                   class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prolog/prolog-original.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"
                 />
-              </div>
-              <p class="card-text">
-                Programmed a Lisp function and a Prolog clause that finds the
-                longest play with least wildcards or largest point value in a
-                card game "Twenty."
-              </p>
-            </div>
-            <div class="card-footer text-center">
-              <a
-                href="#"
-                class="btn btn-secondary"
-                data-toggle="modal"
-                data-target="#twentyDetails"
-                >Learn more</a
-              >
-            </div>
-          </div>
-          <div class="card text-white glass">
-            <img
-              class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/pacman.PNG"
-              alt="pacman"
-              height="250px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pacman AI</h5>
-              <div class="icon-bar">
-                <img
-                  class="icon"
-                  src="https://img.icons8.com/color/48/python--v1.png"
-                />
-              </div>
-              <p class="card-text">
-                Implemented DFS, BFS, and A* Search algorithm for Pacman,
-                minimax and alpha beta pruning to maximize score, and inference,
-                bayes networks to predict ghost location.
-              </p>
-            </div>
-            <div class="card-footer text-center">
-              <a
-                href="#"
-                class="btn btn-secondary"
-                data-toggle="modal"
-                data-target="#pacmanDetails"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Row 3 -->
-        <div class="card-deck projectset my-3">
-          <div class="card text-white glass">
-            <img
-              class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/dogknight.PNG"
-              alt="dogknight"
-              height="250px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Dog Knight</h5>
-              <div class="icon-bar">
                 <img
                   class="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg"
                 />
                 <img
                   class="icon"
-                  src="https://img.icons8.com/color/48/google-drive--v2.png"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                />
+                <!-- <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularmaterial/angularmaterial-original.svg"
+                /> -->
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg"
+                />
+                <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                />
+                <!-- <img
+                  class="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                /> -->
+                <img
+                  class="icon"
+                  src="https://img.icons8.com/color/48/git.png"
                 />
               </div>
               <p class="card-text">
-                Acted as team leader for the game Dog Knight. As leader, I came
-                up with a collaboration/version merge plan, and built a
-                timeline. I also added Audio/Visual Effects, combat, and game
-                world.
+                Build a todolist with four interchangeable backends: MongoDB +
+                Express + Node, MySQL + Java + Spring, PostgreSQL + Django,
+                Microsoft SQL Server + C# + ASP.NET, and three interchangeable
+                frontends: Vanilla HTML/CSS/JS, jQuery + Bootstrap, and React +
+                Tailwind.
               </p>
             </div>
             <div class="card-footer text-center">
@@ -1173,674 +784,1555 @@
                 href="#"
                 class="btn btn-secondary"
                 data-toggle="modal"
-                data-target="#dogknightDetails"
+                data-target="#todoDetails"
                 >Learn more</a
-              >
-            </div>
-          </div>
-          <div class="card text-white glass">
-            <img
-              class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/yelp.PNG"
-              alt="yelp"
-              height="250px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Yelp! Sentiment Analysis</h5>
-              <div class="icon-bar">
-                <img
-                  class="icon"
-                  src="https://img.icons8.com/color/48/python--v1.png"
-                />
-                <img
-                  class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
-                />
-                <img
-                  class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
-                />
-                <img
-                  class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
-                />
-                <img
-                  class="icon"
-                  src="https://img.icons8.com/color/48/google-drive--v2.png"
-                />
-              </div>
-              <p class="card-text">
-                Implemented a Feed Forward and Recurrent neural network for
-                Sentiment Analysis that predicts a Yelp review's rating.
-                Constructed report detailing variations of networks,
-                performance, and error.
-              </p>
-            </div>
-            <div class="card-footer text-center">
-              <a
-                href="#"
-                class="btn btn-secondary"
-                data-toggle="modal"
-                data-target="#yelpDetails"
-                >Learn more</a
-              >
-            </div>
-          </div>
-          <div class="card text-white glass">
-            <img
-              class="card-img-top img-fluid"
-              src="/projects/images/thumbnail/ipr.PNG"
-              alt="ipr"
-              height="250px"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Insect Pest Recognition using CNN models
-              </h5>
-              <div class="icon-bar">
-                <img
-                  class="icon"
-                  src="https://img.icons8.com/color/48/python--v1.png"
-                />
-                <img
-                  class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
-                />
-                <img
-                  class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
-                />
-                <img
-                  class="icon"
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
-                />
-                <img
-                  class="icon"
-                  src="https://img.icons8.com/color/48/google-drive--v2.png"
-                />
-              </div>
-              <p class="card-text">
-                Implemented ResNet18, MobileNet, and GoogleNet to classify
-                insect pests from the IP102 dataset with a group. Created a
-                report detailing experiment and results, and presented a
-                presentation on our implementation and findings.
-              </p>
-            </div>
-            <div class="card-footer text-center">
-              <a
-                href="#"
-                class="btn btn-secondary"
-                data-toggle="modal"
-                data-target="#iprDetails"
-                >Learn More</a
               >
             </div>
           </div>
         </div>
       </div>
-      <!-- sys modal -->
-      <div
-        class="modal fade"
-        id="sysDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="sysDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="sysDetails">Systems Programming</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h5>Built 3 Projects in C</h5>
-              <h5>1. Custom Shell</h5>
-
-              <p>
-                Build a C program that replicates a BASH shell. This custom
-                shell supports pipelining and can access commands using execvp()
-                and fork().
-                <img
-                  src="/projects/images/content/sys0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <h5>2. Merkle Hash Tree</h5>
-              <p>
-                Build a C program that hashes a given file into a hash value by
-                incorporating a multithreaded Merkle tree. The resulting hash
-                function and time to hash then get printed into the console. A
-                document was also created to find the relationship of amount of
-                threads and the time to compute the hash. The results show that
-                the relationship between amount of threads and speedup is
-                proportional
-
-                <img
-                  src="/projects/images/content/sys1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <h5>3. Client and Server</h5>
-
-              <p>
-                Build a C program that allows a client to connect to a server
-                with a port number and hostname using sockets. The client can
-                send records which include name and id information to the
-                server’s database, and the server can return an error or success
-                message.
-
-                <img
-                  src="/projects/images/content/sys2.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- jos modal -->
-      <div
-        class="modal fade"
-        id="josDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="josDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="josDetails">JOS Operating System</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Build JOS operating system provided with a skeleton code.
-                Learned about the booting system of a 32 bit x86 Intel i386
-                chip, implemented memory management like page directory/table,
-                implemented user environments and exception handling, added
-                preemptive multitasking, and implemented File system, spawn, and
-                shell. Followed the Lab instructions:
-                <a
-                  href="https://crs.s3lab.io/cs4348/2023/fall/info.html"
-                  target="_blank"
-                  >https://crs.s3lab.io/cs4348/2023/fall/info.html</a
+      <!-- Personal Modal -->
+      <div class="Personal-Modal">
+        <!-- quickplay modal -->
+        <div
+          class="modal fade"
+          id="quickplayDetails"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="quickplayDetails"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="quickplayDetails">QuickPlay</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
                 >
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- glass modal -->
-      <div
-        class="modal fade"
-        id="glassDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="glassDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="glassDetails">Glass Database</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Planned with a group of 4 to create a database for a
-                hypothetical grocery store chain, Glass. Glass is a small local
-                grocery store chain with low customer and supplier count, 5
-                employees(1 manager, 2 associates, 2 janitors), a customer
-                population at 200, inventory of 210 products, and 150 purchases
-                a day. In Phase 1 of our project, we created a Proposal
-                detailing the assumptions made for our database and the Entity
-                Relationship Dictionary and Diagram based on those assumptions.
-                <img
-                  src="/projects/images/content/glass0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                In Phase 2, we made corrections to the Entity Relationship
-                Dictionary and diagram, and applied the Relational Mapping
-                Algorithm to convert the diagram into Schema Diagram and
-                Dictionary.
-                <img
-                  src="/projects/images/content/glass1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                In Phase 3, we started applying our database schema into MySQL.
-                We created an implementation log to implement our schema using
-                CREATE TABLE. We then use the DESCRIBE command in MySQL Shell to
-                check if all the tables matched our assumptions.
-                <img
-                  src="/projects/images/content/glass2.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                In the final phase, we populate our database according to our
-                assumptions (ex: 3 Stores with 3 different addressess, 200
-                customers, 150 different orders, 210 different products with
-                unique attributes...), and provided query examples to access
-                specific attributes of our database.
-                <img
-                  src="/projects/images/content/glass3.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  A Chrome Extension that allows you to speed up videos by
+                  selecting the "video" tag, and increasing the playback rate. A
+                  use for this extension is to play videos with higher and lower
+                  playback for websites without playback controls, finer
+                  playback controls (ex:1.59 speed), or exceed playback limits
+                  on websites (Youtube caps at 2x speed)
+                  <img
+                    src="/projects/images/content/quickplay0.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  Features a shortcut to bring up QuickPlay window (Alt + Q)
+                  <br />
+                  Allows quick reset to normal 1x speed (Alt + 1) <br />
+                  and quick shortcuts to skip by 0.25x speed (Alt + Up/Down
+                  Arrow Keys)
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- soundrise modal -->
-      <div
-        class="modal fade"
-        id="soundriseDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="soundriseDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="soundriseDetails">Soundrise</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
+        <!-- scraper modal-->
+        <div
+          class="modal fade"
+          id="scraperDetails"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="scraperDetails"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="scraperDetails">
+                  IMDb Runtime Scraper
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h5>
+                  (Currently outdated as IMDb changed the layout of their
+                  website)
+                </h5>
+                <p>
+                  A webpage that will take a given IMDb TV Show id and return
+                  the total runtime in minutes as given in each episode's
+                  runtime description with BeautifulSoup and Selenium. <br />
+                  <br />
+                  Almost all online sites that calculate the runtime of a show
+                  uses the formula # of episodes * Average runtime of all
+                  episodes. This can lead to inaccurate results especially for
+                  shows with varying runtimes for each episode(more common
+                  because of streaming).<br />
+                  <br />
+                  The scraper works by first receiving the IMDb id, retrieves
+                  the HTML of the episode list containing that id with
+                  BeautifulSoap as the episode list is loaded statically. Next,
+                  the scraper uses Selenium to load each episode page
+                  dynamically, scrape the runtime, and sum the results. <br />
+                  <br />
+                  Here is an example of calculating the exact runtime of
+                  Breaking Bad
+                  <img
+                    src="/projects/images/content/scraper0.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
-            <div class="modal-body">
-              <p>
-                Created a SRS document with a group about a music streaming
-                service called “Soundrise.” The requirement specification
-                addressed the service's purpose, scope, main terms, actor
-                characteristics, functional categories and their features.
-                <img
-                  src="/projects/images/content/soundrise0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                Each of us created use case documents that incorporate UML
-                diagrams, success scenarios, and an activity diagram.
-                <img
-                  src="/projects/images/content/soundrise1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
+          </div>
+        </div>
+        <!-- imager modal -->
+        <div
+          class="modal fade"
+          id="imagerDetails"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="imagerDetails"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="imagerDetails">Imager API</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Build an API that allows someone to register and authenticate
+                  with a username and password with Spring Security, and store
+                  images(encoded in base64) into a MySQL database using
+                  Hibernate. Also used Postman to check my API. The first step
+                  in interacting with this API is to register with a username,
+                  email and password.
+                  <img
+                    src="/projects/images/content/imager0.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  Once the user is registered, the AuthenticationController
+                  would pass the Request and return the JSON Web Token generated
+                  by the JWT Service. Next, The AuthenticationService would
+                  store the user info to the User Repository. Hibernate will
+                  then put the info into the MySQL Database.
+                  <img
+                    src="/projects/images/content/imager1.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  The next step for this API is to authenticate their identity
+                  by sending a post request with their username and password.
+                  This would generate a following JWT token that can be used for
+                  posting or getting images.
+                  <img
+                    src="/projects/images/content/imager2.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  After authenticating, one can send a post request to post an
+                  image. You can authenticate by pasting the token to "bearer
+                  token" or "Basic Auth" and typing the username and password.
+                  <img
+                    src="/projects/images/content/imager3.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  After posting the image, it will appear in the image table in
+                  the MySQL database.
+                  <img
+                    src="/projects/images/content/imager4.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  You can get all images, by authenticating like the post
+                  request. It will return JSON of the image and user ID, title,
+                  image in base64 format, and description.
 
-              <p>
-                An Analysis and Design document was also created. The AD
-                document incorporated an overview component diagram, showcasing
-                the interactions between components in the Presentation,
-                application services, and Data tiers and System-wide entity
-                classes diagram.
-                <img
-                  src="/projects/images/content/soundrise2.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                New use case documents were created that showcased analysis
-                class and sequence diagrams, along with design class and
-                sequence diagrams. The designs were also designed to incorporate
-                design patterns like DTO, Facade, DAO, Validator, and Builder.
-                <img
-                  src="/projects/images/content/soundrise3.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
+                  <img
+                    src="/projects/images/content/imager5.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  Other API endpoints include GET image, which when given the
+                  image id (ex: image2/3), will return that specific image. Put
+                  image, which will replace the image with the given image ID,
+                  and DEL image which will delete the image with the given image
+                  ID.
+
+                  <img
+                    src="/projects/images/content/imager6.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ITube modal -->
+        <div
+          class="modal fade"
+          id="itubeDetails"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="itubeDetails"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="itubeDetails">Itube</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Followed a tutorial to create a youtube clone, ITube, where
+                  users can sign in with their google accounts using Firebase
+                  Auth, upload videos when authenticated, and watch videos that
+                  are uploaded. Google cloud is used to run the Docker files of
+                  the API and Video Processing, and Firebase is used as the
+                  database. The frontend incorporates React, Typescript, and
+                  NextJS, which would send requests to a backend that uses
+                  ExpressJS. I deviated from the tutorial by using TailwindCSS
+                  for the frontend, Typescript for the API service, and
+                  implementing a upload form. ITube's Upload Page features a
+                  form for Title, Description, Upload Video, and Upload
+                  Thumbnail. The current iteration only supports Video uploads.
+                  <img
+                    src="/projects/images/content/itube.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                  <img
+                    src="/projects/images/content/itube0.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  Once the video is uploaded, it will call an endpoint in the
+                  public video api service, which is received by Cloud Storage
+                  by a implementing public api service which incorporates
+                  Firebase functions. Once Cloud Storage receives the video, it
+                  triggers the Pub/Sub subscription to queue a message to
+                  process the video with the video processing service.
+                  <img
+                    src="/projects/images/content/itube5.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  The video processing service is a Docker image created to
+                  process the video to 360 or 720p, store the result in a
+                  processed bucket, and store video data to Firebase.
+                  <img
+                    src="/projects/images/content/itube4.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                  <img
+                    src="/projects/images/content/itube3.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  For the videos to be displayed to the front end, the web
+                  client first gets videos from the public api service, which
+                  will retrieve the data from firestore. The videos are then
+                  mapped to the front page.
+                  <img
+                    src="/projects/images/content/itube1.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  Clicking on the video brings ITube to the watch page, where
+                  users can watch the video.
+                  <img
+                    src="/projects/images/content/itube2.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- portfolio modal -->
+        <div
+          class="modal fade"
+          id="portfolioDetails"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="portfolioDetails"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="portfolioDetails">Portfolio</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>This Website!!!</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- todo modal -->
+        <div
+          class="modal fade"
+          id="todoDetails"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="todoDetails"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="todoDetails">Various TodoLists</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3>Build TodoLists with Different Frontends and Backends</h3>
+                <h4>Backend</h4>
+                <p>
+                  All Backends follow the same endpoints: <br />
+                  - GET /api/todo/ - Get All TodoList Items <br />
+                  - POST /api/todo/ - Post Todolist Items<br />
+                  - PUT /api/todo/:id - Edit TodoList Item given ID<br />
+                  - DELETE /api/todo/:id - Delete Todolist Item given ID<br />
+                </p>
+                <p>
+                  And each database follows the same schema: <br />
+                  - Title - String (required) <br />
+                  - Description - String <br />
+                  - Finished - boolean (required, defaults to false) <br />
+                  - Deadline - Date <br />
+                </p>
+                <h5>1. MongoDB, Express, and Node</h5>
+                <p>
+                  Created a backend rest API using Express. The image below
+                  shows a todo list Item Post Request and the corresponding
+                  entry in MongoDB
+                </p>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="/projects/images/content/todo0.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="50%"
+                  />
+                  <img
+                    src="/projects/images/content/todo1.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="50%"
+                  />
+                </div>
+                <h5>2. MySQL, Spring</h5>
+                <p>
+                  Created a backend rest API using Spring. The image below shows
+                  a todo list Item Post Request and the corresponding entry in
+                  MySQL
+                </p>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="/projects/images/content/todo2.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="50%"
+                  />
+                  <img
+                    src="/projects/images/content/todo3.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="50%"
+                  />
+                </div>
+                <h5>3. PostgresSQL, Django</h5>
+                <p>
+                  Created a backend rest API using Django. The image below shows
+                  a todo list Item Post Request and the corresponding entry in
+                  PostgreSQL
+                </p>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="/projects/images/content/todo4.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="30%"
+                  />
+                  <img
+                    src="/projects/images/content/todo5.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="70%"
+                  />
+                </div>
+                <h5>4. Microsoft SQL Server, ASP.NET</h5>
+                <p>
+                  Created a backend rest API using ASP.NET. The image below
+                  shows a todo list Item Post Request and the corresponding
+                  entry in Microsoft SQL Server
+                </p>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="/projects/images/content/todo6.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="30%"
+                  />
+                  <img
+                    src="/projects/images/content/todo7.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="70%"
+                  />
+                </div>
+
+                <h4>Frontend</h4>
+                <p>
+                  - Vanilla HTML/CSS/JS and jQuery + Bootstrap frontends connect
+                  to backend using Fetch API <br />
+                  - React + Tailwind connects to backend using Axios API <br />
+                </p>
+                <h5>1. Vanilla HTML/CSS/JS</h5>
+                <p>
+                  Created a frontend with Vanilla HTML/CSS/JS. The image below
+                  shows the result of Adding a Todolist item, and the second
+                  image shows the result of Deleting a Todolist item
+                </p>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="/projects/images/content/todo8.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="50%"
+                  />
+                  <img
+                    src="/projects/images/content/todo9.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="50%"
+                  />
+                </div>
+                <h5>2. jQuery, Bootstrap</h5>
+                <p>
+                  Created a frontend with jQuery and Bootstrap. The image below
+                  shows the result of Adding a Todolist item, and the second
+                  image shows the editing of the second Todolist item
+                </p>
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="/projects/images/content/todo10.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="50%"
+                  />
+                  <img
+                    src="/projects/images/content/todo11.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                    width="50%"
+                  />
+                </div>
+                <h5>3. React, Tailwind</h5>
+                <p>
+                  Created a frontend with React and TailwindCSS. The image below
+                  shows the front page
+
+                  <img
+                    src="/projects/images/content/todo12.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+                <p>
+                  The bottom two images show the Edit functionality
+                  <img
+                    src="/projects/images/content/todo13.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                  <img
+                    src="/projects/images/content/todo14.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </p>
+
+                <!-- <h5>4. Angular, Material</h5> -->
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Academic</h2>
+        <div class="container">
+          <!-- Row 1 -->
+          <div class="card-deck projectset my-3">
+            <div class="card text-white glass">
               <img
-                src="/projects/images/content/soundrise4.PNG"
-                class="img-thumbnail mx-auto d-block"
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/systemsprogramming.PNG"
+                alt="sys"
+                height="250px"
               />
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- twenty modal -->
-      <div
-        class="modal fade"
-        id="twentyDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="twentyDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="twentyDetails">Twenty Card Solver</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Build a Lisp/Prolog function/clause that finds the longest play
-                with least amount of Kings or largest point value in a hand of a
-                card game Twenty, where given a hand, one must match an
-                incrementing count that reaches twenty using a subset of that
-                hand. Kings are also counted as wildcards, face cards can have
-                pairs, and cards have different point values but Kings have a
-                point penalty. This was done by breaking the problem into
-                chunks. To get all possible plays, Copy all cards that are
-                smaller than the count, generate pairs if applicable, generate
-                wild cards up to count, and combine. To find the longest play
-                with the least amount of Kings, I sort all possible plays by a
-                score that prioritizes length with a larger value than Kings. To
-                find the largest point value, I sort all possible plays by point
-                value. The image below is both behaviors playing each other in
-                Lisp using DrRacket.
-                <img
-                  src="/projects/images/content/twenty0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                The image below is both behaviors playing each other in Prolog
-                using SWI-Prolog.
-                <img
-                  src="/projects/images/content/twenty1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- pacman modal -->
-      <div
-        class="modal fade"
-        id="pacmanDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="pacmanDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="pacmanDetails">Pacman AI</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Learned AI concepts by following the Pacman AI Project as
-                described in
+              <div class="card-body">
+                <h5 class="card-title">Systems Programming</h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/bash.png"
+                  />
+                </div>
+
+                <p class="card-text">
+                  Build 3 C projects: A client and server using sockets that
+                  stores info, a multithreaded Merkle hash tree to encrypt a
+                  file, and a custom shell that includes pipelining and built-in
+                  commands.
+                </p>
+              </div>
+              <div class="card-footer text-center">
                 <a
-                  href="http://ai.berkeley.edu/project_overview"
-                  target="_blank"
-                  >http://ai.berkeley.edu/project_overview</a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#sysDetails"
+                  >Learn more</a
                 >
-              </p>
-              <p>
-                The image below shows the A* algorithm passing the given test
-                cases of finding an optimal path.
-                <img
-                  src="/projects/images/content/pacman0.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
-              <p>
-                Another image shown below shows the use of the expectimax
-                algorithm to avoid ghosts
-                <img
-                  src="/projects/images/content/pacman1.PNG"
-                  class="img-thumbnail mx-auto d-block"
-                />
-              </p>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+            <div class="card text-white glass">
+              <img
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/jos.PNG"
+                alt="Jos"
+                height="250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JOS Operating System</h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/bash.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/fluency/48/x86.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/git.png"
+                  />
+                </div>
+                <p class="card-text">
+                  Build a JOS operating system. Learned how a Intel x86 i386
+                  chip boots, implemented memory management, environments,
+                  exception handling, multitasking, file systems, spawn, and
+                  shell.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#josDetails"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="card text-white glass">
+              <img
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/glass.PNG"
+                alt="Glass"
+                height="250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Glass Database</h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/microsoft-visio.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/google-drive--v2.png"
+                  />
+                </div>
+                <p class="card-text">
+                  Constructed a grocery store database "Glass" with a group.
+                  Created a proposal, an ER and Schema Diagram/Dictionary,
+                  Implementation Log, Table Listing, and Data/Query examples.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#glassDetails"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="card-deck projectset my-3">
+            <div class="card text-white glass">
+              <img
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/soundrise.PNG"
+                alt="soundrise"
+                height="250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Soundrise</h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/microsoft-word-2019--v2.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg"
+                  />
+                </div>
+                <p class="card-text">
+                  Created a group SRS requirement/analysis document about a
+                  music streaming service called “Soundrise” that included Use
+                  Cases/UML, component/analysis/sequence diagram.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#soundriseDetails"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="card text-white glass">
+              <img
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/twenty.PNG"
+                alt="twenty"
+                height="250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Twenty Card Solver</h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/lisp.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prolog/prolog-original.svg"
+                  />
+                </div>
+                <p class="card-text">
+                  Programmed a Lisp function and a Prolog clause that finds the
+                  longest play with least wildcards or largest point value in a
+                  card game "Twenty."
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#twentyDetails"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="card text-white glass">
+              <img
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/pacman.PNG"
+                alt="pacman"
+                height="250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pacman AI</h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/python--v1.png"
+                  />
+                </div>
+                <p class="card-text">
+                  Implemented DFS, BFS, and A* Search algorithm for Pacman,
+                  minimax and alpha beta pruning to maximize score, and
+                  inference, bayes networks to predict ghost location.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#pacmanDetails"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="card-deck projectset my-3">
+            <div class="card text-white glass">
+              <img
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/dogknight.PNG"
+                alt="dogknight"
+                height="250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dog Knight</h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/google-drive--v2.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/git.png"
+                  />
+                </div>
+                <p class="card-text">
+                  Acted as team leader for the game Dog Knight. As leader, I
+                  came up with a collaboration/version merge plan, and built a
+                  timeline. I also added Audio/Visual Effects, combat, and game
+                  world.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#dogknightDetails"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="card text-white glass">
+              <img
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/yelp.PNG"
+                alt="yelp"
+                height="250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Yelp! Sentiment Analysis</h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/python--v1.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/google-drive--v2.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/git.png"
+                  />
+                </div>
+                <p class="card-text">
+                  Implemented a Feed Forward and Recurrent neural network for
+                  Sentiment Analysis that predicts a Yelp review's rating.
+                  Constructed report detailing variations of networks,
+                  performance, and error.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#yelpDetails"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+            <div class="card text-white glass">
+              <img
+                class="card-img-top img-fluid"
+                src="/projects/images/thumbnail/ipr.PNG"
+                alt="ipr"
+                height="250px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Insect Pest Recognition using CNN models
+                </h5>
+                <div class="icon-bar">
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/python--v1.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/google-drive--v2.png"
+                  />
+                  <img
+                    class="icon"
+                    src="https://img.icons8.com/color/48/git.png"
+                  />
+                </div>
+                <p class="card-text">
+                  Implemented ResNet18, MobileNet, and GoogleNet to classify
+                  insect pests from the IP102 dataset with a group. Created a
+                  report detailing experiment and results, and presented a
+                  presentation on our implementation and findings.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a
+                  href="#"
+                  class="btn btn-secondary"
+                  data-toggle="modal"
+                  data-target="#iprDetails"
+                  >Learn More</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- dogknight modal -->
-      <div
-        class="modal fade"
-        id="dogknightDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="dogknightDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="dogknightDetails">Dog Knight</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Build a game in Unity with a group of three. Full details about
-                this game is in this document.
-              </p>
-              <p>
-                <a href="/documents/dogknight.pdf" target="_blank">View Info</a>
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- yelp modal -->
-      <div
-        class="modal fade"
-        id="yelpDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="yelpDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="yelpDetails">
-                Yelp! Sentiment Analysis
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                For this project, we are filling the forward function for FFNN
-                and RNN models that would predict Yelp! review scores. The main
-                experiments are testing the FFNN and RNN models with different
-                hidden dimension sizes, and the results are a better accuracy of
-                65% with the FFNN model at 32 dimensions, with the average RNN
-                accuracy at around 30%. Full paper is below.
-              </p>
-              <p>
-                <a href="/documents/yelp.pdf" target="_blank">View Paper</a>
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+        <!-- Academic Modals -->
+        <div class="Academic-Modal">
+          <!-- sys modal -->
+          <div
+            class="modal fade"
+            id="sysDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="sysDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="sysDetails">
+                    Systems Programming
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h5>Built 3 Projects in C</h5>
+                  <h5>1. Custom Shell</h5>
+
+                  <p>
+                    Build a C program that replicates a BASH shell. This custom
+                    shell supports pipelining and can access commands using
+                    execvp() and fork().
+                    <img
+                      src="/projects/images/content/sys0.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <h5>2. Merkle Hash Tree</h5>
+                  <p>
+                    Build a C program that hashes a given file into a hash value
+                    by incorporating a multithreaded Merkle tree. The resulting
+                    hash function and time to hash then get printed into the
+                    console. A document was also created to find the
+                    relationship of amount of threads and the time to compute
+                    the hash. The results show that the relationship between
+                    amount of threads and speedup is proportional
+
+                    <img
+                      src="/projects/images/content/sys1.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <h5>3. Client and Server</h5>
+
+                  <p>
+                    Build a C program that allows a client to connect to a
+                    server with a port number and hostname using sockets. The
+                    client can send records which include name and id
+                    information to the server’s database, and the server can
+                    return an error or success message.
+
+                    <img
+                      src="/projects/images/content/sys2.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- ipr modal -->
-      <div
-        class="modal fade"
-        id="iprDetails"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="iprDetails"
-        style="display: none"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content bg-dark text-white">
-            <div class="modal-header">
-              <h5 class="modal-title" id="iprDetails">
-                Insect Pest Recognition using CNN models
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">×</span>
-              </button>
+          <!-- jos modal -->
+          <div
+            class="modal fade"
+            id="josDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="josDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="josDetails">
+                    JOS Operating System
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Build JOS operating system provided with a skeleton code.
+                    Learned about the booting system of a 32 bit x86 Intel i386
+                    chip, implemented memory management like page
+                    directory/table, implemented user environments and exception
+                    handling, added preemptive multitasking, and implemented
+                    File system, spawn, and shell. Followed the Lab
+                    instructions:
+                    <a
+                      href="https://crs.s3lab.io/cs4348/2023/fall/info.html"
+                      target="_blank"
+                      >https://crs.s3lab.io/cs4348/2023/fall/info.html</a
+                    >
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
-              <p>
-                The primary objective of this project is to deploy Convolutional
-                Neural Networks (CNNs) to accurately identify and classify
-                insect pests from images. This task involves developing a
-                machine learning model capable of discerning between various
-                insect species, specifically those that are detrimental to
-                agriculture. By leveraging the strengths of three different CNN
-                architectures, Resnet18, GoogleNet, and MobileNetV3, this
-                project aims to evaluate which model performs best in terms of
-                accuracy, computational efficiency, and practical applicability
-                in aiding agricultural practices. Full paper is below.
-              </p>
-              <p>
-                <a href="/documents/ipr.pdf" target="_blank">View Paper</a>
-              </p>
+          </div>
+          <!-- glass modal -->
+          <div
+            class="modal fade"
+            id="glassDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="glassDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="glassDetails">Glass Database</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Planned with a group of 4 to create a database for a
+                    hypothetical grocery store chain, Glass. Glass is a small
+                    local grocery store chain with low customer and supplier
+                    count, 5 employees(1 manager, 2 associates, 2 janitors), a
+                    customer population at 200, inventory of 210 products, and
+                    150 purchases a day. In Phase 1 of our project, we created a
+                    Proposal detailing the assumptions made for our database and
+                    the Entity Relationship Dictionary and Diagram based on
+                    those assumptions.
+                    <img
+                      src="/projects/images/content/glass0.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <p>
+                    In Phase 2, we made corrections to the Entity Relationship
+                    Dictionary and diagram, and applied the Relational Mapping
+                    Algorithm to convert the diagram into Schema Diagram and
+                    Dictionary.
+                    <img
+                      src="/projects/images/content/glass1.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <p>
+                    In Phase 3, we started applying our database schema into
+                    MySQL. We created an implementation log to implement our
+                    schema using CREATE TABLE. We then use the DESCRIBE command
+                    in MySQL Shell to check if all the tables matched our
+                    assumptions.
+                    <img
+                      src="/projects/images/content/glass2.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <p>
+                    In the final phase, we populate our database according to
+                    our assumptions (ex: 3 Stores with 3 different addressess,
+                    200 customers, 150 different orders, 210 different products
+                    with unique attributes...), and provided query examples to
+                    access specific attributes of our database.
+                    <img
+                      src="/projects/images/content/glass3.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+          </div>
+          <!-- soundrise modal -->
+          <div
+            class="modal fade"
+            id="soundriseDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="soundriseDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="soundriseDetails">Soundrise</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Created a SRS document with a group about a music streaming
+                    service called “Soundrise.” The requirement specification
+                    addressed the service's purpose, scope, main terms, actor
+                    characteristics, functional categories and their features.
+                    <img
+                      src="/projects/images/content/soundrise0.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <p>
+                    Each of us created use case documents that incorporate UML
+                    diagrams, success scenarios, and an activity diagram.
+                    <img
+                      src="/projects/images/content/soundrise1.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+
+                  <p>
+                    An Analysis and Design document was also created. The AD
+                    document incorporated an overview component diagram,
+                    showcasing the interactions between components in the
+                    Presentation, application services, and Data tiers and
+                    System-wide entity classes diagram.
+                    <img
+                      src="/projects/images/content/soundrise2.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <p>
+                    New use case documents were created that showcased analysis
+                    class and sequence diagrams, along with design class and
+                    sequence diagrams. The designs were also designed to
+                    incorporate design patterns like DTO, Facade, DAO,
+                    Validator, and Builder.
+                    <img
+                      src="/projects/images/content/soundrise3.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <img
+                    src="/projects/images/content/soundrise4.PNG"
+                    class="img-thumbnail mx-auto d-block"
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- twenty modal -->
+          <div
+            class="modal fade"
+            id="twentyDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="twentyDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="twentyDetails">
+                    Twenty Card Solver
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Build a Lisp/Prolog function/clause that finds the longest
+                    play with least amount of Kings or largest point value in a
+                    hand of a card game Twenty, where given a hand, one must
+                    match an incrementing count that reaches twenty using a
+                    subset of that hand. Kings are also counted as wildcards,
+                    face cards can have pairs, and cards have different point
+                    values but Kings have a point penalty. This was done by
+                    breaking the problem into chunks. To get all possible plays,
+                    Copy all cards that are smaller than the count, generate
+                    pairs if applicable, generate wild cards up to count, and
+                    combine. To find the longest play with the least amount of
+                    Kings, I sort all possible plays by a score that prioritizes
+                    length with a larger value than Kings. To find the largest
+                    point value, I sort all possible plays by point value. The
+                    image below is both behaviors playing each other in Lisp
+                    using DrRacket.
+                    <img
+                      src="/projects/images/content/twenty0.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <p>
+                    The image below is both behaviors playing each other in
+                    Prolog using SWI-Prolog.
+                    <img
+                      src="/projects/images/content/twenty1.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pacman modal -->
+          <div
+            class="modal fade"
+            id="pacmanDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="pacmanDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="pacmanDetails">Pacman AI</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Learned AI concepts by following the Pacman AI Project as
+                    described in
+                    <a
+                      href="http://ai.berkeley.edu/project_overview"
+                      target="_blank"
+                      >http://ai.berkeley.edu/project_overview</a
+                    >
+                  </p>
+                  <p>
+                    The image below shows the A* algorithm passing the given
+                    test cases of finding an optimal path.
+                    <img
+                      src="/projects/images/content/pacman0.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                  <p>
+                    Another image shown below shows the use of the expectimax
+                    algorithm to avoid ghosts
+                    <img
+                      src="/projects/images/content/pacman1.PNG"
+                      class="img-thumbnail mx-auto d-block"
+                    />
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- dogknight modal -->
+          <div
+            class="modal fade"
+            id="dogknightDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="dogknightDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="dogknightDetails">Dog Knight</h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Build a game in Unity with a group of three. Full details
+                    about this game is in this document.
+                  </p>
+                  <p>
+                    <a href="/documents/dogknight.pdf" target="_blank"
+                      >View Info</a
+                    >
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- yelp modal -->
+          <div
+            class="modal fade"
+            id="yelpDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="yelpDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="yelpDetails">
+                    Yelp! Sentiment Analysis
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    For this project, we are filling the forward function for
+                    FFNN and RNN models that would predict Yelp! review scores.
+                    The main experiments are testing the FFNN and RNN models
+                    with different hidden dimension sizes, and the results are a
+                    better accuracy of 65% with the FFNN model at 32 dimensions,
+                    with the average RNN accuracy at around 30%. Full paper is
+                    below.
+                  </p>
+                  <p>
+                    <a href="/documents/yelp.pdf" target="_blank">View Paper</a>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ipr modal -->
+          <div
+            class="modal fade"
+            id="iprDetails"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="iprDetails"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="iprDetails">
+                    Insect Pest Recognition using CNN models
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    The primary objective of this project is to deploy
+                    Convolutional Neural Networks (CNNs) to accurately identify
+                    and classify insect pests from images. This task involves
+                    developing a machine learning model capable of discerning
+                    between various insect species, specifically those that are
+                    detrimental to agriculture. By leveraging the strengths of
+                    three different CNN architectures, Resnet18, GoogleNet, and
+                    MobileNetV3, this project aims to evaluate which model
+                    performs best in terms of accuracy, computational
+                    efficiency, and practical applicability in aiding
+                    agricultural practices. Full paper is below.
+                  </p>
+                  <p>
+                    <a href="/documents/ipr.pdf" target="_blank">View Paper</a>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1862,7 +2354,7 @@
       crossorigin="anonymous"
     ></script>
     <footer class="footer">
-      <section class="mb-4 text-center">
+      <section class="my-4 text-center">
         <!-- Github -->
         <a
           class="btn btn-outline-light m-1 btn-circle btn-md"
@@ -1904,6 +2396,20 @@
             width="30"
             height="30"
             src="https://img.icons8.com/color/48/gmail-new.png"
+            alt="mail"
+          />
+        </a>
+        <!-- Resume -->
+        <a
+          class="btn btn-outline-light m-1 btn-circle btn-md"
+          href="/documents/Ari_Hu_Resume.pdf"
+          role="button"
+          target="_blank"
+        >
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/fluency/48/resume.png"
             alt="mail"
           />
         </a>

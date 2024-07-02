@@ -14,7 +14,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <title>Ari Hu's Resume</title>
+    <title>Ari Hu's Random Stuff</title>
   </head>
   <body class="background text-light">
     <nav class="navbar navbar-expand-lg navbar-dark border h3 m-3">
@@ -34,37 +34,34 @@
           <li class="nav-item">
             <a class="nav-link" href="../">Home </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects/">Projects</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#"
-              >Resume<span class="sr-only">(current)</span></a
+              >Misc.<span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/projects/">Projects</a>
+            <a class="nav-link" href="/about/">About</a>
           </li>
         </ul>
       </div>
     </nav>
-
-    <div class="container">
-      <h1>Resume</h1>
-      <button
-        id="unclickable"
-        type="button"
-        class="btn btn-info position-absolute"
-        style="top: 20%; left: 45%"
+    <div class="d-flex justify-content-around p-3 m-5">
+      <a style="text-decoration: none; color: white" href="/misc/Virtual-Jam/"
+        ><button type="button" class="btn btn-outline-light btn-lg btn-block">
+          Virtual-Jam
+        </button></a
       >
-        <!-- ok -->
-        <a
-          href="/documents/Ari_Hu_Resume.pdf"
-          target="_blank"
-          style="color: white"
-          >View Resume</a
-        >
-      </button>
+      <a style="text-decoration: none; color: white" href="/misc/Cube-World/"
+        ><button type="button" class="btn btn-outline-light btn-lg btn-block">
+          Cube-World
+        </button></a
+      >
     </div>
+    <div class="d-flex justify-content-center p-3 m-5"></div>
 
-    <script src="/scripts/unclickable.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -123,6 +120,20 @@
             width="30"
             height="30"
             src="https://img.icons8.com/color/48/gmail-new.png"
+            alt="mail"
+          />
+        </a>
+        <!-- Resume -->
+        <a
+          class="btn btn-outline-light m-1 btn-circle btn-md"
+          href="/documents/Ari_Hu_Resume.pdf"
+          role="button"
+          target="_blank"
+        >
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/fluency/48/resume.png"
             alt="mail"
           />
         </a>
