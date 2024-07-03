@@ -7,10 +7,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
   </head>
   <body>
-    <a href="/misc/">
-      <button>Back to Site</button>
-    </a>
-    <h1>Virtual Jam</h1>
+    <div class="header">
+      <a href="/misc/">
+        <button>Back to Site</button>
+      </a>
+      <h1>Virtual Jam</h1>
+    </div>
+
     <div id="p-wrapper">
       <ul id="piano">
         <!-- A0-B0 -->
@@ -145,7 +148,32 @@
         <li><div class="piano-key white" data-note="C6"></div></li>
       </ul>
     </div>
-
+    <div id="drumkit">
+      <div class="drum" data-note="crash">
+        <img src="/misc/Virtual-Jam/drums/crash.png" height="180" />
+      </div>
+      <div class="drum" data-note="high-tom">
+        <img src="/misc/Virtual-Jam/drums/drum.png" height="160" />
+      </div>
+      <div class="drum" data-note="mid-tom">
+        <img src="/misc/Virtual-Jam/drums/drum.png" height="180" />
+      </div>
+      <div class="drum" data-note="ride">
+        <img src="/misc/Virtual-Jam/drums/crash.png" height="220" />
+      </div>
+      <div class="drum" data-note="openhat">
+        <img src="/misc/Virtual-Jam/drums/hihat.png" height="140" />
+      </div>
+      <div class="drum" data-note="snare">
+        <img src="/misc/Virtual-Jam/drums/drum.png" height="180" />
+      </div>
+      <div class="drum" data-note="kick">
+        <img src="/misc/Virtual-Jam/drums/drum.png" height="260" />
+      </div>
+      <div class="drum" data-note="floor-tom">
+        <img src="/misc/Virtual-Jam/drums/drum.png" height="210" />
+      </div>
+    </div>
     <script src="/misc/Virtual-Jam/scripts.js"></script>
   </body>
 </html>
