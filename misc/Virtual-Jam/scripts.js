@@ -1,4 +1,4 @@
-const socket = io('ariservers.com:3000', {transports: ['websocket'], secure: true});
+const socket = io('vjam.ariservers.com:3372/', {transports: ['websocket'], secure: true});
 
 socket.on('connect', () =>{
     console.log("Connected to backend");
