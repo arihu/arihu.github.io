@@ -34,7 +34,7 @@ drums.forEach((drum) => {
     drum.addEventListener('mousedown', (e) =>{
         const pressedDrum = drum.dataset.note;
         console.log("Pressed Drum Note: " + pressedDrum);
-        playSound(pressedDrum, Instrument.Piano);
+        playSound(pressedDrum, Instrument.Drums);
         // socket.emit('notePress', {note: pressedDrum, instrument: Instrument.Drums});
     });
 
