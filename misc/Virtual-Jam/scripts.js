@@ -48,8 +48,8 @@ drums.forEach((drum) => {
 function playSound(note, instrument){
     console.log("Play Note Sound");
     if(instrument == Instrument.Piano)
-        audio = new Audio(`/Sounds/piano-mp3/${note}.mp3`);
+        audio = new Audio(`/sounds/piano-mp3/${note}.mp3`);
     else if(instrument == Instrument.Drums)
-        audio = new Audio(`/Sounds/drums-mp3/${note}.mp3`)
+        audio = new Audio(`/sounds/drums-mp3/${note}.mp3`)
     audio.play();
 }
