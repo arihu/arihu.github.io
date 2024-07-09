@@ -16,62 +16,129 @@
     />
     <title>Ari Hu's Random Stuff</title>
   </head>
-  <body class="background text-light">
-    <nav class="navbar navbar-expand-lg navbar-dark border h3 m-3">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../">Home </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects/">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/misc/">Misc.</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="d-flex justify-content-center p-4 m-3">
-      <div class="threed-text">Should've Gone to the Gig!</div>
+  <body class="text-light">
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark border h3 m-3">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/misc/">Misc.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div class="d-flex justify-content-center m-3">
+          <div class="threed-text">Should've Gone to the Gig!</div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <model-viewer
+            alt="square0"
+            src="/models/square0.glb"
+            ar
+            shadow-intensity="1"
+            touch-action="pan-y"
+            auto-rotate
+            rotation-per-second="30deg"
+            disable-zoom
+            camera-orbit="-10deg 90deg"
+          ></model-viewer>
+          <model-viewer
+            alt="square1"
+            src="/models/square1.glb"
+            ar
+            shadow-intensity="1"
+            touch-action="pan-y"
+            auto-rotate
+            rotation-per-second="30deg"
+            disable-zoom
+          ></model-viewer>
+        </div>
+      </main>
+      <footer class="footer">
+        <section class="my-4 text-center">
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light m-1 btn-circle btn-md"
+            href="https://github.com/arihu"
+            role="button"
+            target="_blank"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/github.png"
+              alt="github"
+            />
+          </a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light m-1 btn-circle btn-md"
+            href="https://www.linkedin.com/in/ari-hu-3658a3292/"
+            role="button"
+            target="_blank"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/color/48/linkedin.png"
+              alt="linkedin"
+            />
+          </a>
+
+          <!-- Mail -->
+          <a
+            class="btn btn-outline-light m-1 btn-circle btn-md"
+            href="mailto: ariwho1@gmail.com"
+            role="button"
+            target="_blank"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/color/48/gmail-new.png"
+              alt="mail"
+            />
+          </a>
+          <!-- Resume -->
+          <a
+            class="btn btn-outline-light m-1 btn-circle btn-md"
+            href="/documents/Ari_Hu_Resume.pdf"
+            role="button"
+            target="_blank"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/fluency/48/resume.png"
+              alt="mail"
+            />
+          </a>
+        </section>
+      </footer>
     </div>
-    <div class="d-flex justify-content-center">
-      <model-viewer
-        alt="square0"
-        src="/models/square0.glb"
-        ar
-        shadow-intensity="1"
-        touch-action="pan-y"
-        auto-rotate
-        rotation-per-second="30deg"
-        disable-zoom
-        camera-orbit="-10deg 90deg"
-      ></model-viewer>
-      <model-viewer
-        alt="square1"
-        src="/models/square1.glb"
-        ar
-        shadow-intensity="1"
-        touch-action="pan-y"
-        auto-rotate
-        rotation-per-second="30deg"
-        disable-zoom
-      ></model-viewer>
-    </div>
+
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
@@ -91,67 +158,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <footer class="footer fixed-bottom">
-      <section class="my-4 text-center">
-        <!-- Github -->
-        <a
-          class="btn btn-outline-light m-1 btn-circle btn-md"
-          href="https://github.com/arihu"
-          role="button"
-          target="_blank"
-        >
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/ios-glyphs/30/github.png"
-            alt="github"
-          />
-        </a>
-
-        <!-- Linkedin -->
-        <a
-          class="btn btn-outline-light m-1 btn-circle btn-md"
-          href="https://www.linkedin.com/in/ari-hu-3658a3292/"
-          role="button"
-          target="_blank"
-        >
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/color/48/linkedin.png"
-            alt="linkedin"
-          />
-        </a>
-
-        <!-- Mail -->
-        <a
-          class="btn btn-outline-light m-1 btn-circle btn-md"
-          href="mailto: ariwho1@gmail.com"
-          role="button"
-          target="_blank"
-        >
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/color/48/gmail-new.png"
-            alt="mail"
-          />
-        </a>
-        <!-- Resume -->
-        <a
-          class="btn btn-outline-light m-1 btn-circle btn-md"
-          href="/documents/Ari_Hu_Resume.pdf"
-          role="button"
-          target="_blank"
-        >
-          <img
-            width="30"
-            height="30"
-            src="https://img.icons8.com/fluency/48/resume.png"
-            alt="mail"
-          />
-        </a>
-      </section>
-    </footer>
   </body>
 </html>

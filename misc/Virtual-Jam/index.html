@@ -7,18 +7,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
   </head>
   <body>
-    <div class="header">
-      <a href="/misc/">
-        <button>Back to Site</button>
-      </a>
-      <h1>Virtual Jam</h1>
-    </div>
-    <p style="font-size: 8">Currently WebSocket functionality is turned off</p>
-
-    <div id="p-wrapper">
-      <ul id="piano">
-        <!-- A0-B0 -->
-        <!-- <li>
+    <nav>
+      <div class="header">
+        <a href="/misc/">
+          <button id="vjam-btn">Back to Site</button>
+        </a>
+        <h1>Virtual Jam</h1>
+      </div>
+      <p style="font-size: 6">
+        Currently WebSocket functionality is turned off
+      </p>
+    </nav>
+    <main>
+      <div id="p-wrapper">
+        <ul id="piano">
+          <!-- A0-B0 -->
+          <!-- <li>
           <div class="piano-key white"></div>
         </li>
         <li>
@@ -26,8 +30,8 @@
           <span class="piano-key black" ></span>
         </li> -->
 
-        <!-- C1-B1  Octave Block -->
-        <!-- <li><div class="piano-key white"></div></li>
+          <!-- C1-B1  Octave Block -->
+          <!-- <li><div class="piano-key white"></div></li>
         <li>
           <div class="piano-key white"></div>
           <span class="piano-key black" ></span>
@@ -50,131 +54,133 @@
           <span class="piano-key black" ></span>
         </li> -->
 
-        <!-- C2-B2 Octave Block -->
-        <li><div class="piano-key white" data-note="C2"></div></li>
-        <li>
-          <div class="piano-key white" data-note="D2"></div>
-          <span class="piano-key black" data-note="Db2"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="E2"></div>
-          <span class="piano-key black" data-note="Eb2"></span>
-        </li>
-        <li><div class="piano-key white" data-note="F2"></div></li>
-        <li>
-          <div class="piano-key white" data-note="G2"></div>
-          <span class="piano-key black" data-note="Gb2"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="A2"></div>
-          <span class="piano-key black" data-note="Ab2"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="B2"></div>
-          <span class="piano-key black" data-note="Bb2"></span>
-        </li>
+          <!-- C2-B2 Octave Block -->
+          <li><div class="piano-key white" data-note="C2"></div></li>
+          <li>
+            <div class="piano-key white" data-note="D2"></div>
+            <span class="piano-key black" data-note="Db2"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="E2"></div>
+            <span class="piano-key black" data-note="Eb2"></span>
+          </li>
+          <li><div class="piano-key white" data-note="F2"></div></li>
+          <li>
+            <div class="piano-key white" data-note="G2"></div>
+            <span class="piano-key black" data-note="Gb2"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="A2"></div>
+            <span class="piano-key black" data-note="Ab2"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="B2"></div>
+            <span class="piano-key black" data-note="Bb2"></span>
+          </li>
 
-        <!-- C3-B3 Octave Block -->
-        <li><div class="piano-key white" data-note="C3"></div></li>
-        <li>
-          <div class="piano-key white" data-note="D3"></div>
-          <span class="piano-key black" data-note="Db3"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="E3"></div>
-          <span class="piano-key black" data-note="Eb3"></span>
-        </li>
-        <li><div class="piano-key white" data-note="F3"></div></li>
-        <li>
-          <div class="piano-key white" data-note="G3"></div>
-          <span class="piano-key black" data-note="Gb3"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="A3"></div>
-          <span class="piano-key black" data-note="Ab3"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="B3"></div>
-          <span class="piano-key black" data-note="Bb3"></span>
-        </li>
+          <!-- C3-B3 Octave Block -->
+          <li><div class="piano-key white" data-note="C3"></div></li>
+          <li>
+            <div class="piano-key white" data-note="D3"></div>
+            <span class="piano-key black" data-note="Db3"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="E3"></div>
+            <span class="piano-key black" data-note="Eb3"></span>
+          </li>
+          <li><div class="piano-key white" data-note="F3"></div></li>
+          <li>
+            <div class="piano-key white" data-note="G3"></div>
+            <span class="piano-key black" data-note="Gb3"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="A3"></div>
+            <span class="piano-key black" data-note="Ab3"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="B3"></div>
+            <span class="piano-key black" data-note="Bb3"></span>
+          </li>
 
-        <!-- C4-B4 Octave Block -->
-        <li><div class="piano-key white" data-note="C4"></div></li>
-        <li>
-          <div class="piano-key white" data-note="D4"></div>
-          <span class="piano-key black" data-note="Db4"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="E4"></div>
-          <span class="piano-key black" data-note="Eb4"></span>
-        </li>
-        <li><div class="piano-key white" data-note="F4"></div></li>
-        <li>
-          <div class="piano-key white" data-note="G4"></div>
-          <span class="piano-key black" data-note="Gb4"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="A4"></div>
-          <span class="piano-key black" data-note="Ab4"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="B4"></div>
-          <span class="piano-key black" data-note="Bb4"></span>
-        </li>
+          <!-- C4-B4 Octave Block -->
+          <li><div class="piano-key white" data-note="C4"></div></li>
+          <li>
+            <div class="piano-key white" data-note="D4"></div>
+            <span class="piano-key black" data-note="Db4"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="E4"></div>
+            <span class="piano-key black" data-note="Eb4"></span>
+          </li>
+          <li><div class="piano-key white" data-note="F4"></div></li>
+          <li>
+            <div class="piano-key white" data-note="G4"></div>
+            <span class="piano-key black" data-note="Gb4"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="A4"></div>
+            <span class="piano-key black" data-note="Ab4"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="B4"></div>
+            <span class="piano-key black" data-note="Bb4"></span>
+          </li>
 
-        <!-- C5-B5 Octave Block -->
-        <li><div class="piano-key white" data-note="C5"></div></li>
-        <li>
-          <div class="piano-key white" data-note="D5"></div>
-          <span class="piano-key black" data-note="Db5"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="E5"></div>
-          <span class="piano-key black" data-note="Eb5"></span>
-        </li>
-        <li><div class="piano-key white" data-note="F5"></div></li>
-        <li>
-          <div class="piano-key white" data-note="G5"></div>
-          <span class="piano-key black" data-note="Gb5"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="A5"></div>
-          <span class="piano-key black" data-note="Ab5"></span>
-        </li>
-        <li>
-          <div class="piano-key white" data-note="B5"></div>
-          <span class="piano-key black" data-note="Bb5"></span>
-        </li>
-        <!-- C6-B6 Octave Block -->
-        <li><div class="piano-key white" data-note="C6"></div></li>
-      </ul>
-    </div>
-    <div id="drumkit">
-      <div class="drum" data-note="crash">
-        <img src="/misc/Virtual-Jam/drums/crash.png" height="180" />
+          <!-- C5-B5 Octave Block -->
+          <li><div class="piano-key white" data-note="C5"></div></li>
+          <li>
+            <div class="piano-key white" data-note="D5"></div>
+            <span class="piano-key black" data-note="Db5"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="E5"></div>
+            <span class="piano-key black" data-note="Eb5"></span>
+          </li>
+          <li><div class="piano-key white" data-note="F5"></div></li>
+          <li>
+            <div class="piano-key white" data-note="G5"></div>
+            <span class="piano-key black" data-note="Gb5"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="A5"></div>
+            <span class="piano-key black" data-note="Ab5"></span>
+          </li>
+          <li>
+            <div class="piano-key white" data-note="B5"></div>
+            <span class="piano-key black" data-note="Bb5"></span>
+          </li>
+          <!-- C6-B6 Octave Block -->
+          <li><div class="piano-key white" data-note="C6"></div></li>
+        </ul>
       </div>
-      <div class="drum" data-note="high-tom">
-        <img src="/misc/Virtual-Jam/drums/drum.png" height="160" />
+      <div id="drumkit">
+        <div class="drum" data-note="crash">
+          <img src="/misc/Virtual-Jam/drums/crash.png" height="180" />
+        </div>
+        <div class="drum" data-note="high-tom">
+          <img src="/misc/Virtual-Jam/drums/drum.png" height="160" />
+        </div>
+        <div class="drum" data-note="mid-tom">
+          <img src="/misc/Virtual-Jam/drums/drum.png" height="180" />
+        </div>
+        <div class="drum" data-note="ride">
+          <img src="/misc/Virtual-Jam/drums/crash.png" height="220" />
+        </div>
+        <div class="drum" data-note="openhat">
+          <img src="/misc/Virtual-Jam/drums/hihat.png" height="140" />
+        </div>
+        <div class="drum" data-note="snare">
+          <img src="/misc/Virtual-Jam/drums/drum.png" height="180" />
+        </div>
+        <div class="drum" data-note="kick">
+          <img src="/misc/Virtual-Jam/drums/drum.png" height="260" />
+        </div>
+        <div class="drum" data-note="floor-tom">
+          <img src="/misc/Virtual-Jam/drums/drum.png" height="210" />
+        </div>
       </div>
-      <div class="drum" data-note="mid-tom">
-        <img src="/misc/Virtual-Jam/drums/drum.png" height="180" />
-      </div>
-      <div class="drum" data-note="ride">
-        <img src="/misc/Virtual-Jam/drums/crash.png" height="220" />
-      </div>
-      <div class="drum" data-note="openhat">
-        <img src="/misc/Virtual-Jam/drums/hihat.png" height="140" />
-      </div>
-      <div class="drum" data-note="snare">
-        <img src="/misc/Virtual-Jam/drums/drum.png" height="180" />
-      </div>
-      <div class="drum" data-note="kick">
-        <img src="/misc/Virtual-Jam/drums/drum.png" height="260" />
-      </div>
-      <div class="drum" data-note="floor-tom">
-        <img src="/misc/Virtual-Jam/drums/drum.png" height="210" />
-      </div>
-    </div>
+    </main>
+
     <script src="/misc/Virtual-Jam/scripts.js"></script>
   </body>
 </html>
