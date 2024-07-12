@@ -10,7 +10,7 @@ function cubePassword() {
 
 //Can you crack it?
 function validatePassword(pw){
-    if(pw === null)
+    if(pw === null || pw.length > 8)
         return false;
     pw += "f92j1028";
     let c0 = String.fromCharCode(pw[0].charCodeAt(0) - 22);
@@ -22,7 +22,5 @@ function validatePassword(pw){
     let c6 = String.fromCharCode(pw[6].charCodeAt(0) - 50);
     let c7 = String.fromCharCode(pw[7].charCodeAt(0) - 49);
     let pass = c0 + c1 + c2 + c3 + c4 + c5 + c6 + c7;
-    if(pass === btoa("1234"))
-        return true;
     return pass === btoa("1234");
 }

@@ -1,12 +1,12 @@
-// const socket = io('ariservers.com', {transports: ['websocket'], secure: true});
+const socket = io('https://ariservers.com', {path: '/api/v1/vjam/socket.io', transports: ['websocket'], secure: true});
 
-// socket.on('connect', () =>{
-//     console.log("Connected to backend");
-// });
+socket.on('connect', () =>{
+    console.log("Connected to backend");
+});
 
-// socket.on('disconnect', () => {
-//     console.log("Disconnected from backend");
-// });
+socket.on('disconnect', () => {
+    console.log("Disconnected from backend");
+});
 
 
 const keys = document.querySelectorAll('.piano-key');
@@ -26,7 +26,7 @@ keys.forEach((key) => {
         playSound(pressedKey, Instrument.Piano);
 
 
-        // socket.emit('notePress', {note: pressedKey, instrument: Instrument.Piano});
+        socket.emit('notePress', {note: pressedKey, instrument: Instrument.Piano});
     });
 });
 
@@ -35,15 +35,15 @@ drums.forEach((drum) => {
         const pressedDrum = drum.dataset.note;
         console.log("Pressed Drum Note: " + pressedDrum);
         playSound(pressedDrum, Instrument.Drums);
-        // socket.emit('notePress', {note: pressedDrum, instrument: Instrument.Drums});
+        socket.emit('notePress', {note: pressedDrum, instrument: Instrument.Drums});
     });
 
 });
 
-// socket.on('notePress', data => {
-//     console.log("Received Note from server: " + data.note + ", " + data.instrument);
-//     playSound(data.note, data.instrument);
-// })
+socket.on('notePress', data => {
+    console.log("Received Note from server: " + data.note + ", " + data.instrument);
+    playSound(data.note, data.instrument);
+})
 
 function playSound(note, instrument){
     console.log("Play Note Sound");
